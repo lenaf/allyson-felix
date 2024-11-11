@@ -1,6 +1,6 @@
 const siteData = {
-  title: 'She Runs the World Documentary',
-  description: 'Allyson Felix',
+  title: 'She Runs the World Movie',
+  description: 'She Runs the World Movie',
   language: 'en-us',
   locale: 'en-US',
   routes: [

@@ -2,22 +2,20 @@
 
 import LinkAsButton from "@/components/common/LinkAsButton";
 import Image from "next/image"
-import heroDesktop from "public/images/photography/heroDesktop.jpg"
-import heroMobile from "public/images/photography/heroMobile.jpg"
+import background from "public/images/photography/background.jpg"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center h-screen	">
+    <div className="flex flex-col items-center">
 
-      <section id='home-hero' className="relative h-5/6 w-full animate-fade">
+      <section id='home-hero' className="animate-fade">
         <Image
-          src={heroDesktop}
+          src={background}
           alt="hero"
-          fill
           className="desktop object-cover object-top"
         />
         <Image
-          src={heroMobile}
+          src={background}
           alt="hero"
           fill
           className="mobile object-cover object-top"

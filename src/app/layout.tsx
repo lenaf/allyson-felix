@@ -21,10 +21,10 @@ export default function RootLayout({
     <html data-theme="custom" lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
-        <div className="flex h-screen flex-col justify-between font-sans">
-          <Header />
+        <div className="flex flex-col justify-between font-sans">
+          {/* <Header /> */}
           <main className="mb-auto">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>

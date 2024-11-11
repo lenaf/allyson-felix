@@ -37,6 +37,11 @@ module.exports = {
     },],
   },
   theme: {
+    screens: ({ theme }) => ({
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px'
+    }),
     extend: {
       animation: {
         fade: 'fadeIn .5s ease-in-out',

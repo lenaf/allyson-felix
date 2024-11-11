@@ -58,10 +58,10 @@ input:-webkit-autofill:focus {
 
 @layer components {
   .desktop {
-    @apply hidden sm:block;
+    @apply hidden xs:block;
   }
 
   .mobile {
-    @apply block sm:hidden;
+    @apply block xs:hidden;
   }
 }
