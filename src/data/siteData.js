@@ -1,6 +1,6 @@
 const siteData = {
-  title: 'She Runs the World Movie',
-  description: 'She Runs the World Movie',
+  title: 'She Runs the World Film',
+  description: 'She Runs the World Film',
   language: 'en-us',
   locale: 'en-US',
   routes: [
