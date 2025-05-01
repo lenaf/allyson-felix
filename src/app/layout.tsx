@@ -18,13 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="custom" lang="en">
+    <html data-theme="custom" lang="en" style={{
+      scrollBehavior: 'smooth'
+    }}>
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-base-100`}>
         <div className="flex flex-col justify-between font-sans">
-          {/* <Header /> */}
-          <main className="mb-auto">{children}</main>
-          {/* <Footer /> */}
+          <Header />
+          <main className="mb-auto h-full -mt-24">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

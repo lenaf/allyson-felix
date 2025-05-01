@@ -56,6 +56,10 @@ input:-webkit-autofill:focus {
   background-repeat: no-repeat;
 }
 
+ul li {
+  list-style: none
+}
+
 @layer components {
   .desktop {
     @apply hidden xs:block;

@@ -4,10 +4,9 @@ const siteData = {
   language: 'en-us',
   locale: 'en-US',
   routes: [
-    { href: '/', title: 'Home' },
-    { href: '/about', title: 'About' },
-    { href: '/credits', title: 'Credits' },
-    { href: '/press', title: 'Press' },
+    { href: '/', title: 'Home', id: 'home' },
+    { href: '#synopsis', title: 'Synopsis', id: 'synopsis' },
+    { href: '#credits', title: 'Credits', id: 'credits' },
   ],
 }
 

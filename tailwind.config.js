@@ -15,7 +15,7 @@ module.exports = {
   daisyui: {
     themes: ["light", "dark", "cupcake", "pastel", {
       custom: {
-        "primary": "#EFBC30",
+        "primary": "#FADE00",
         "primary-content": "#0f172a",
         "secondary": "#A43817",
         "secondary-content": "#0f172a",
@@ -23,7 +23,7 @@ module.exports = {
         "accent-content": "#0f172a",
         "neutral": "#3d4451",
         "neutral-content": "#3d4451",
-        "base-100": "#1A1A1A",
+        "base-100": "#000d16",
         "base-content": "#FEF8F7",
         "info": "#60a5fa",
         "info-content": "#172554",
@@ -64,7 +64,7 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            maxWidth: '100ch',
+            maxWidth: 'none',
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -78,15 +78,50 @@ module.exports = {
               letterSpacing: theme('letterSpacing.tight'),
               marginBottom: 0,
             },
+            h2: {
+              fontWeight: theme('fontWeight.black'),
+              fontSize: theme('fontSize.4xl'),
+              letterSpacing: theme('letterSpacing.tight'),
+              marginBottom: 0,
+              marginTop: 0,
+              color: 'inherit'
+            },
+            h3: {
+              fontWeight: theme('fontWeight.black'),
+              fontSize: theme('fontSize.lg'),
+              letterSpacing: theme('letterSpacing.normal'),
+              marginBottom: 0,
+              marginTop: 0,
+              color: 'inherit'
+            },
+            h4: {
+              fontWeight: theme('fontWeight.black'),
+              fontSize: theme('fontSize.lg'),
+              letterSpacing: theme('letterSpacing.normal'),
+              marginBottom: 0,
+              marginTop: 0,
+              color: 'inherit'
+            },
             h6: {
               fontWeight: theme('fontWeight.bold'),
               fontSize: theme('fontSize.xl'),
-              letterSpacing: theme('letterSpacing.wide'),
+              letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
             },
             p: {
               fontWeight: theme('fontWeight.thin'),
               letterSpacing: theme('letterSpacing.wide'),
+              color: 'inherit'
+            },
+            'ul > li': {
+              paddingInlineStart: 0,
+              marginTop: 0,
+              marginBottom: 0,
+            },
+            ul: {
+              padding: 0,
+              marginTop: 0,
+              marginBottom: 0,
             }
           },
         },
@@ -98,9 +133,6 @@ module.exports = {
                 color: `${theme('colors.primary.400')}`,
               },
               code: { color: theme('colors.primary.400') },
-            },
-            'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.gray.100'),
             },
           },
         },
