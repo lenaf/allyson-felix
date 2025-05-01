@@ -21,7 +21,7 @@ export default function Screenings() {
             333 W 23rd Street, NY
           </a>
           <div className="">Thursday, June 5th 2025 <span>8:30 PM</span> </div>
-          <LinkAsButton className="h-6 min-h-6 gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+          <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
             <span className="=">Tickets</span>
             <span aria-hidden="true">&rarr;</span>
           </LinkAsButton>
@@ -41,7 +41,7 @@ export default function Screenings() {
           <div className="">Sat, June 7th 2025 <span>3:15 PM</span> </div>
           <div className="">Sat, June 8th 2025 <span>6:15 PM</span> </div>
           <div className="">Sat, June 14th 2025 <span>12:15 PM</span> </div>
-          <LinkAsButton className="h-6 min-h-6 gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+          <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
             <span className="=">Tickets</span>
             <span aria-hidden="true">&rarr;</span>
           </LinkAsButton>
