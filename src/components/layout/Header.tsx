@@ -6,6 +6,7 @@ import Link from '../common/Link'
 import Logo from '../common/Logo'
 import MobileNav from '../nav/MobileNav';
 import NavLinks from '../nav/NavLinks';
+import LinkAsButton from '../common/LinkAsButton';
 
 
 const Header = () => {
@@ -25,9 +26,13 @@ const Header = () => {
         }`}
     >
       <Banner className="text-xs">
-        <div className="mr-4 font-bold">WORLD PREMIER</div>
-        <div className="mr-4">2025 TRIBECA FILM FESTIVAL</div>
+        <div className="font-bold">WORLD PREMIER</div>
+        <div>2025 TRIBECA FILM FESTIVAL</div>
         <div>JUNE 4-15</div>
+        <LinkAsButton className="btn-base-100 rounded-full h-6 min-h-6 gap-2" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+          <span className="=">Tickets</span>
+          <span aria-hidden="true">&rarr;</span>
+        </LinkAsButton>
       </Banner>
 
       <div className="h-20 px-8 flex items-center justify-between uppercase">
