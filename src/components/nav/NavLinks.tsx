@@ -45,7 +45,7 @@ const NavLinks = ({ linkClass, ...rest }: React.HTMLProps<HTMLElement> & { linkC
           </Link>
         )
       })}
-      <LinkAsButton className="btn-primary" href="/" target="_blank">
+      <LinkAsButton className="btn-primary" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
         Get Tickets
       </LinkAsButton>
     </nav>
