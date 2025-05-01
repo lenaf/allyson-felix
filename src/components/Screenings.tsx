@@ -7,7 +7,7 @@ import LinkAsButton from "./common/LinkAsButton";
 export default function Screenings() {
   return (
 
-    <Section id='screening' className="prose p-8 md:p-12" >
+    <Section id='screening' className="prose p-4 sm:p-8 md:p-12" >
       <div className="md:grid md:grid-cols-2 gap-8">
 
         <div >

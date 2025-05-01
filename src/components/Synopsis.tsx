@@ -6,7 +6,7 @@ import SectionHeader from "./common/SectionHeader";
 export default function Synopsis() {
   return (
 
-    <Section id='synopsis' className="prose p-8 md:p-12" >
+    <Section id='synopsis' className="prose p-4 sm:p-8 md:p-12" >
       <SectionHeader>Synopsis</SectionHeader>
 
       <p>
