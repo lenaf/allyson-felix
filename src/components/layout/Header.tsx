@@ -26,7 +26,7 @@ const Header = () => {
         }`}
     >
       <Banner className="text-xs">
-        <div className="font-bold">WORLD PREMIER</div>
+        <div className="font-bold">WORLD PREMIERE</div>
         <div>2025 TRIBECA FILM FESTIVAL</div>
         <div>JUNE 5</div>
         <LinkAsButton className="h-6 min-h-6 gap-2 shadow-none btn-primary" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">

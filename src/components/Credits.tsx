@@ -22,10 +22,11 @@ export default function Credits() {
             <ul>
               <li>Allyson Felix</li>
               <li>Wes Felix<Description> Allyson’s brother & manager </Description> </li>
+              <li>Dr. Paul and Marlean Felix<Description> Allyson’s parents </Description> </li>
+              <li>Pat Connally <Description> Allyson’s former training partner </Description></li>
               <li>Joanna Hayes <Description> Allyson’s former training partner </Description></li>
-              <li>Marlean and Paul Felix<Description> Allyson’s parents </Description> </li>
               <li>Jackie Joyner-Kersee<Description> Six-time Olympic medalist </Description> </li>
-              <li>Bob Kersee <Description> Allyson’s former coach </Description> </li>
+              <li>Coach Bob Kersee <Description> Allyson’s former coach </Description> </li>
             </ul>} />
           <Credit role='Directors' credit={`Perri Peltz, Matthew O'Neill`} />
           <Credit role='Producer' credit={`Lisa Binns`} />
@@ -34,7 +35,26 @@ export default function Credits() {
         <div>
           <Credit role='Editor' credit={`Frances Henderson`} />
           <Credit role='Composer' credit={`Kathryn Bostic`} />
-          <Credit role='Executive Producers' credit={`Tonya Lewis Lee, Tory Burch, Laurie Fabiano, Nina and David Fialkow, Beth Kojima, Melony and Adam Lewis, Crystal McCrary McGuire, Dr. Amelia Quist-Ogunlesi, Carrie Walton Penner, Brenda Robinson, Danny Strong`} />
+          <Credit role='Executive Producers'
+            // alphabatize
+            // Tonya first
+            credit={
+              <>
+                <div>Tonya Lewis Lee</div>
+                <div>
+                  Tory Burch,
+                  Laurie Fabiano,
+                  Nina and David Fialkow,
+                  Beth Kojima,
+                  Melony and Adam Lewis,
+                  Crystal McCrary McGuire,
+                  Dr. Amelia Quist-Ogunlesi,
+                  Carrie Walton Penner,
+                  Brenda Robinson,
+                  Danny Strong
+                </div>
+              </>}
+          />
           <Credit role='Co-Producer' credit={`Julia Rosenheim`} />
         </div>
       </div>
