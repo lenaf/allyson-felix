@@ -65,6 +65,7 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: 'none',
+            color: theme('colors.gray.100'),
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
@@ -88,7 +89,7 @@ module.exports = {
             },
             h3: {
               fontWeight: theme('fontWeight.black'),
-              fontSize: theme('fontSize.lg'),
+              fontSize: theme('fontSize.xl'),
               letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
               marginTop: 0,
@@ -96,7 +97,7 @@ module.exports = {
             },
             h4: {
               fontWeight: theme('fontWeight.black'),
-              fontSize: theme('fontSize.lg'),
+              fontSize: theme('fontSize.xl'),
               letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
               marginTop: 0,

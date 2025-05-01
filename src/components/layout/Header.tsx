@@ -10,20 +10,19 @@ import LinkAsButton from '../common/LinkAsButton';
 
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false)
+  // const [scrolled, setScrolled] = useState(false)
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  // useEffect(() => {
+  //   const onScroll = () => setScrolled(window.scrollY > 10)
+  //   window.addEventListener('scroll', onScroll)
+  //   return () => window.removeEventListener('scroll', onScroll)
+  // }, [])
 
   return (
     <header
-      className={`sticky top-0 w-full z-10 transition-colors duration-300 ${scrolled
-        ? 'bg-base-100 shadow-md'
-        : 'bg-gradient-to-b from-base-100 from-30% to-transparent'
-        }`}
+      className={`sticky top-0 w-full z-10 transition-colors duration-300 bg-base-100 shadow-md' }`}
+    // : 'bg-gradient-to-b from-base-100 from-30% to-transparent'
+
     >
       <Banner className="text-xs">
         <div className="font-bold">WORLD PREMIERE</div>
