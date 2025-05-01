@@ -16,13 +16,17 @@ export default function BackgroundImage(
   return (
     <>
       <Image
+        fill
         alt={alt}
         src={src}
+        placeholder="blur"
         className={`-z-10 absolute w-full h-full object-cover object-top ${srcMobile ? 'desktop' : ''}`}
       />
       {srcMobile && <Image
+        fill
         alt={alt}
         src={srcMobile}
+        placeholder="blur"
         className={`-z-10 absolute w-full h-full object-cover object-top mobile}`}
       />}
     </>
