@@ -18,12 +18,12 @@ export default function BackgroundImage(
       <Image
         alt={alt}
         src={src}
-        className={`absolute w-full h-full object-cover object-top ${srcMobile ? 'desktop' : ''}`}
+        className={`-z-10 absolute w-full h-full object-cover object-top ${srcMobile ? 'desktop' : ''}`}
       />
       {srcMobile && <Image
         alt={alt}
         src={srcMobile}
-        className={`absolute w-full h-full object-cover object-top mobile}`}
+        className={`-z-10 absolute w-full h-full object-cover object-top mobile}`}
       />}
     </>
   );

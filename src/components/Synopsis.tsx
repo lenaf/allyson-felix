@@ -10,7 +10,7 @@ export default function Synopsis() {
       <SectionHeader>Synopsis</SectionHeader>
 
       <p>
-        <b>She Runs the World</b> is the electrifying story of <b>Allyson Felix</b>, the most decorated track and field athlete in history, who didn’t just break records—she redefined what it means to be a champion.
+        <b className="uppercase font-black">She Runs the World</b> is the electrifying story of <b>Allyson Felix</b>, the most decorated track and field athlete in history, who didn’t just break records—she redefined what it means to be a champion.
       </p>
       <p>
         At the peak of her career, Felix faced a life-threatening pregnancy, a public fight for maternal protections in sports, and a high-stakes showdown with Nike, the most powerful brand in athletics. Instead of backing down, she bet on herself—walking away from the world’s biggest sportswear company and launching her own sneaker brand, the first ever designed specifically for women’s feet.

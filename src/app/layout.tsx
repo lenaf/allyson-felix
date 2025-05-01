@@ -22,10 +22,10 @@ export default function RootLayout({
       scrollBehavior: 'smooth'
     }}>
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={`${inter.className} bg-base-100`}>
+      <body className={`${inter.className} `}>
         <div className="flex flex-col justify-between font-sans">
           <Header />
-          <main className="mb-auto h-full -mt-24">{children}</main>
+          <main className="mb-auto h-full -mt-20">{children}</main>
           <Footer />
         </div>
       </body>
