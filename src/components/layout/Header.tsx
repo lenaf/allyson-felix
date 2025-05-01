@@ -22,17 +22,17 @@ const Header = () => {
     <header
       className={`sticky top-0 w-full z-10 transition-colors duration-300 ${scrolled
         ? 'bg-base-100 shadow-md'
-        : 'bg-gradient-to-b from-base-100 from-10% to-transparent'
+        : 'bg-gradient-to-b from-base-100 from-30% to-transparent'
         }`}
     >
       <Banner className="text-xs">
         <div className="font-bold">WORLD PREMIER</div>
         <div>2025 TRIBECA FILM FESTIVAL</div>
-        <div>JUNE 4-15</div>
-        <LinkAsButton className="btn-base-100 rounded-full h-6 min-h-6 gap-2" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+        <div>JUNE 5</div>
+        {/* <LinkAsButton className="btn-base-100 rounded-full h-6 min-h-6 gap-2" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
           <span className="=">Tickets</span>
           <span aria-hidden="true">&rarr;</span>
-        </LinkAsButton>
+        </LinkAsButton> */}
       </Banner>
 
       <div className="h-20 px-8 flex items-center justify-between uppercase">
