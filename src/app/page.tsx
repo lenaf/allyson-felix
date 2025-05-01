@@ -1,6 +1,7 @@
 "use client"
 
 import Divider from "@/components/common/Divider";
+import Contacts from "@/components/Contacts";
 import Credits from "@/components/Credits";
 import Hero from "@/components/Hero";
 import Screenings from "@/components/Screenings";
@@ -15,6 +16,8 @@ export default function Home() {
       <Synopsis />
       <Divider />
       <Credits />
+      <Divider />
+      <Contacts />
     </div>
   );
 }

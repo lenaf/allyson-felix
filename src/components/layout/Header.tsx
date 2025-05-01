@@ -29,10 +29,10 @@ const Header = () => {
         <div className="font-bold">WORLD PREMIER</div>
         <div>2025 TRIBECA FILM FESTIVAL</div>
         <div>JUNE 5</div>
-        {/* <LinkAsButton className="btn-base-100 rounded-full h-6 min-h-6 gap-2" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+        <LinkAsButton className="h-6 min-h-6 gap-2 shadow-none btn-primary" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
           <span className="=">Tickets</span>
           <span aria-hidden="true">&rarr;</span>
-        </LinkAsButton> */}
+        </LinkAsButton>
       </Banner>
 
       <div className="h-20 px-8 flex items-center justify-between uppercase">
