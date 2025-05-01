@@ -14,7 +14,7 @@ const Credit = ({ role, credit }) => <div className="mb-3">
 export default function Credits() {
   return (
 
-    <Section id='credits' className="prose p-12">
+    <Section id='credits' className="prose p-8 md:p-12">
       <SectionHeader>Credits</SectionHeader>
       <div className="md:grid md:grid-cols-2 gap-8">
         <div>

@@ -20,8 +20,6 @@ export default function Hero() {
         src={background}
         srcMobile={backgroundMobile}
       />
-
-
     </Section>
 
   );

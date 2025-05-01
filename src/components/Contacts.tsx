@@ -6,10 +6,10 @@ import Section from "@/components/common/Section";
 export default function Contacts() {
   return (
 
-    <Section id='contacts' className="prose p-12" >
+    <Section id='contacts' className="prose p-8 md:p-12" >
 
       <div >
-        <h2 className="text-primary tracking-normal">Press Contact</h2>
+        <h2 className="text-primary tracking-normal">PRESS CONTACT</h2>
         <div className="text-white">Lana Iny </div>
         <div className="text-sm">Downtown Community Television Center  </div>
         <div className="text-sm">87 Lafayette Street </div>
