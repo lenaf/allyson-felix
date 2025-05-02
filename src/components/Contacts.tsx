@@ -9,11 +9,11 @@ export default function Contacts() {
     <Section id='contacts' className="prose p-4 sm:p-8 md:p-12" >
 
       <div >
-        <h2 className="t">PRESS CONTACT</h2>
-        <div className="text-white text-xl">Lana Iny </div>
+        <h2 className="mb-2">PRESS CONTACT</h2>
+        <div className="text-white text-xl mb-2">Lana Iny </div>
         <div className="">Downtown Community Television Center  </div>
         <div className="">87 Lafayette Street </div>
-        <div className=" mb-2">New York, New York 10013</div>
+        <div className=" mb-2">New York, NY 10013</div>
         <a
           href="tel:9179924794"
           className=" underline hover:text-primary transition block"

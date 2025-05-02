@@ -21,12 +21,12 @@ export default function Credits() {
           <Credit role='Featured Cast' credit={
             <ul>
               <li>Allyson Felix</li>
-              <li>Wes Felix<Description> Allyson’s brother & manager </Description> </li>
-              <li>Dr. Paul and Marlean Felix<Description> Allyson’s parents </Description> </li>
-              <li>Pat Connally <Description> Allyson’s former training partner </Description></li>
-              <li>Joanna Hayes <Description> Allyson’s former training partner </Description></li>
-              <li>Jackie Joyner-Kersee<Description> Six-time Olympic medalist </Description> </li>
-              <li>Coach Bob Kersee <Description> Allyson’s former coach </Description> </li>
+              <li>Wes Felix<Description>Allyson’s brother & manager </Description> </li>
+              <li>Dr. Paul and Marlean Felix<Description>Allyson’s parents </Description> </li>
+              <li>Pat Connolly<Description>Olympian and Coach</Description></li>
+              <li>Joanna Hayes<Description>Olympian and Friend</Description></li>
+              <li>Jackie Joyner-Kersee<Description>Six-time Olympic medalist </Description> </li>
+              <li>Coach Bob Kersee <Description>Allyson’s former coach </Description> </li>
             </ul>} />
           <Credit role='Directors' credit={`Perri Peltz, Matthew O'Neill`} />
           <Credit role='Producer' credit={`Lisa Binns`} />
