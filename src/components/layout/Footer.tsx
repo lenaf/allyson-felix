@@ -4,7 +4,7 @@ import SocialIcon from '@/components/social-icons'
 import Divider from '../common/Divider'
 import Logo from '../common/Logo'
 import DCTV from "public/images/DCTV.png"
-import getToYes from "public/images/getToYes.png"
+import getToYes from "public/images/getToYesWhite.png"
 import Image from "next/image"
 
 export default function Footer() {
