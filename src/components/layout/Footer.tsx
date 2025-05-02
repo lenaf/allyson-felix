@@ -18,8 +18,8 @@ export default function Footer() {
         <Divider />
         <div className="mb-2 flex p-4 justify-center items-center gap-8 space-x-2 text-sm">
           <div className='justify-self-start mr-auto'>{`© 2025 DCTV`}</div>
-          <a href='https://www.dctvny.org/s/' target="_blank"> <Image height={40} src={DCTV} alt='DCTV Logo' /></a>
-          <a href='https://gettoyesproductions.com/' target="_blank"><Image height={40} src={getToYes} alt='Get to Yes Logo' /></a>
+          <a href='https://www.dctvny.org/s/' target="_blank"> <Image height={50} src={DCTV} alt='DCTV Logo' /></a>
+          <a href='https://gettoyesproductions.com/' target="_blank"><Image height={50} src={getToYes} alt='Get to Yes Logo' /></a>
         </div>
       </div>
     </footer>

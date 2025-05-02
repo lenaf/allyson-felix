@@ -31,9 +31,10 @@ export default function Credits() {
             </ul>} />
           <Credit role='Directors' credit={`Perri Peltz, Matthew O'Neill`} />
           <Credit role='Producer' credit={`Lisa Binns`} />
-          <Credit role='Cinematographer' credit={`Nasreen Alkhateeb`} />
+          <Credit role='Co-Producer' credit={`Julia Rosenheim`} />
         </div>
         <div>
+          <Credit role='Cinematographer' credit={`Nasreen Alkhateeb`} />
           <Credit role='Editor' credit={`Frances Henderson`} />
           <Credit role='Composer' credit={`Kathryn Bostic`} />
           <Credit role='Executive Producers'
@@ -56,17 +57,16 @@ export default function Credits() {
                 </div>
               </>}
           />
-          <Credit role='Co-Producer' credit={`Julia Rosenheim`} />
         </div>
       </div>
 
       <Divider />
 
-      <h4 className="uppercase">About the Filmakers</h4>
+      <SectionHeader>About the Filmakers</SectionHeader>
       <div className="md:grid md:grid-cols-2 gap-12">
         <p className="">
-          Perri Peltz is an Emmy® award winning documentary filmmaker, journalist, and public health advocate. Most recently, Perri directed Surveilled with Ronan Farrow for HBO and Can’t Look Away for Bloomberg Originals with Matthew O’Neill. Perri and Matt also created the Emmy® winning documentary news series AXIOS on HBO, and directed and produced the 2019 HBO Documentary, Alternate Endings: Six New Ways to Die in America. Previously, Perri directed the HBO documentaries, Warning: This Drug May Kill You, about the opioid addiction epidemic and Risky Drinking, about alcohol use disorder. She co-directed A Conversation About Growing Up Black as part of the “Conversation on Race” series for The New York Times Op-Docs, and other films include HBO’s Remembering the Artist: Robert De Niro, Sr. and Prison Dogs. Perri hosts “The Perri Peltz Show” on SiriusXM Radio and has a Doctorate in Public Health from Columbia University. She was previously an award-winning broadcast journalist for NBC, ABC, and CNN.</p>
-        <p className="">{`Matthew O’Neill is an Emmy® Award winning and Academy Award® nominated documentary filmmaker and journalist. He most recently directed Can’t Look Away for Bloomberg Originals, Surveilled with Ronan Farrow for HBO and created the Emmy® winning HBO documentary news series AXIOS on HBO with Perri Peltz. Matt and Perri also directed the 2019 HBO documentary Alternate Endings: Six New Ways to Die in America. Matt has been making non-fiction films and series with Downtown Community Television Center, Inc, (DCTV) in NYC's Chinatown for the last 25 years. His earlier projects for HBO, ESPN, Disney+, Netflix and FRONTLINE have focused on everything from the Egyptian Revolution to the wars in Iraq and Afghanistan, the American criminal justice system, and the School of American Ballet. His filmmaking has taken him to more than 50 different countries for films including Baghdad ER, In Tahrir Square and Wartorn. He has received two Academy Award nominations for Redemption and China’s Unnatural Disaster: The Tears of Sichuan Province and has been recognized with two Columbia DuPont Awards, a Peabody Award, an Overseas Press Club Award, six Emmy Awards and a Director’s Guild nomination.`}</p>
+          <span className="font-black text-lg">Perri Peltz</span>  is an Emmy® award winning documentary filmmaker, journalist, and public health advocate. Most recently, Perri directed Surveilled with Ronan Farrow for HBO and Can’t Look Away for Bloomberg Originals with Matthew O’Neill. Perri and Matt also created the Emmy® winning documentary news series AXIOS on HBO, and directed and produced the 2019 HBO Documentary, Alternate Endings: Six New Ways to Die in America. Previously, Perri directed the HBO documentaries, Warning: This Drug May Kill You, about the opioid addiction epidemic and Risky Drinking, about alcohol use disorder. She co-directed A Conversation About Growing Up Black as part of the “Conversation on Race” series for The New York Times Op-Docs, and other films include HBO’s Remembering the Artist: Robert De Niro, Sr. and Prison Dogs. Perri hosts “The Perri Peltz Show” on SiriusXM Radio and has a Doctorate in Public Health from Columbia University. She was previously an award-winning broadcast journalist for NBC, ABC, and CNN.</p>
+        <p className=""><span className="font-black text-lg">Matthew O’Neill</span> {`is an Emmy® Award winning and Academy Award® nominated documentary filmmaker and journalist. He most recently directed Can’t Look Away for Bloomberg Originals, Surveilled with Ronan Farrow for HBO and created the Emmy® winning HBO documentary news series AXIOS on HBO with Perri Peltz. Matt and Perri also directed the 2019 HBO documentary Alternate Endings: Six New Ways to Die in America. Matt has been making non-fiction films and series with Downtown Community Television Center, Inc, (DCTV) in NYC's Chinatown for the last 25 years. His earlier projects for HBO, ESPN, Disney+, Netflix and FRONTLINE have focused on everything from the Egyptian Revolution to the wars in Iraq and Afghanistan, the American criminal justice system, and the School of American Ballet. His filmmaking has taken him to more than 50 different countries for films including Baghdad ER, In Tahrir Square and Wartorn. He has received two Academy Award nominations for Redemption and China’s Unnatural Disaster: The Tears of Sichuan Province and has been recognized with two Columbia DuPont Awards, a Peabody Award, an Overseas Press Club Award, six Emmy Awards and a Director’s Guild nomination.`}</p>
       </div>
 
       <Divider />

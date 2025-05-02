@@ -81,7 +81,7 @@ module.exports = {
             },
             h2: {
               fontWeight: theme('fontWeight.black'),
-              fontSize: theme('fontSize.4xl'),
+              fontSize: theme('fontSize.3xl'),
               letterSpacing: theme('letterSpacing.tight'),
               marginBottom: 0,
               marginTop: 0,

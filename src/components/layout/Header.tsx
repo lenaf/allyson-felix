@@ -26,7 +26,7 @@ const Header = () => {
     >
       <Banner className="text-xs">
         <div >WORLD PREMIERE</div>
-        <div>TRIBECA FILM FESTIVAL</div>
+        <div>TRIBECA FESTIVAL</div>
         <LinkAsButton className="h-6 min-h-6 gap-2 shadow-none btn-primary p-0" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
           <span className="=">Tickets</span>
           <span aria-hidden="true">&rarr;</span>
@@ -35,7 +35,7 @@ const Header = () => {
 
       <div className="h-20 px-8 flex items-center justify-between uppercase">
         <Link href="/">
-          <Logo width={200} />
+          <Logo width={300} />
         </Link>
         <div className="desktop">
           <NavLinks className="flex items-center gap-4 md:gap-8" />

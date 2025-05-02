@@ -1,6 +1,7 @@
 "use client"
 
 import Section from "@/components/common/Section";
+import SectionHeader from "./common/SectionHeader";
 
 
 export default function Contacts() {
@@ -9,7 +10,7 @@ export default function Contacts() {
     <Section id='contacts' className="prose px-4 sm:px-8 md:px-12 py-12" >
 
       <div >
-        <h2 className="mb-2">PRESS CONTACT</h2>
+        <SectionHeader>PRESS CONTACT</SectionHeader>
         <div className="text-white text-xl mb-2">Lana Iny </div>
         <div className="">Downtown Community Television Center  </div>
         <div className="">87 Lafayette Street </div>
