@@ -10,7 +10,7 @@ export default function Screenings() {
     <Section id='screening' className="prose px-4 sm:px-8 md:px-12 py-12" >
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
-          <h2 className="text-primary tracking-normal">WORLD PREMIERE</h2>
+          <h2 className="text-primary tracking-normal mb-2">WORLD PREMIERE</h2>
           <div className="text-white text-lg">SVA Theatre 1 - Silas </div>
           <a
             href="https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011"
@@ -28,7 +28,7 @@ export default function Screenings() {
         </div>
 
         <div >
-          <h2 className="text-primary tracking-normal">MORE SCREENINGS</h2>
+          <h2 className="text-primary tracking-normal mb-2">MORE SCREENINGS</h2>
           <div className="text-white text-lg">Village East by Angelika </div>
           <a
             href="https://www.google.com/maps?q=181-189+2nd+Ave,+New+York,+NY+10003"
