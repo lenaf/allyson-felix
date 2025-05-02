@@ -2,6 +2,7 @@
 
 import Section from "@/components/common/Section";
 import SectionHeader from "./common/SectionHeader";
+import Divider from "./common/Divider";
 
 const Role = ({ children }) => <h3 className="text-primary uppercase">{children}</h3>
 const Description = ({ children }) => <span className="ml-1 text-gray-300 ">{children}</span>
@@ -14,7 +15,7 @@ const Credit = ({ role, credit }) => <div className="mb-3">
 export default function Credits() {
   return (
 
-    <Section id='credits' className="prose p-4 sm:p-8 md:p-12">
+    <Section id='credits' className="prose px-4 sm:px-8 md:px-12 py-12">
       <SectionHeader>Credits</SectionHeader>
       <div className="md:grid md:grid-cols-2 gap-8">
         <div>
@@ -59,7 +60,7 @@ export default function Credits() {
         </div>
       </div>
 
-      <div className="flex-grow border-t border-gray-400 my-4"></div>
+      <Divider />
 
       <h4 className="uppercase">About the Filmakers</h4>
       <div className="md:grid md:grid-cols-2 gap-12">
@@ -68,7 +69,7 @@ export default function Credits() {
         <p className="">{`Matthew O’Neill is an Emmy® Award winning and Academy Award® nominated documentary filmmaker and journalist. He most recently directed Can’t Look Away for Bloomberg Originals, Surveilled with Ronan Farrow for HBO and created the Emmy® winning HBO documentary news series AXIOS on HBO with Perri Peltz. Matt and Perri also directed the 2019 HBO documentary Alternate Endings: Six New Ways to Die in America. Matt has been making non-fiction films and series with Downtown Community Television Center, Inc, (DCTV) in NYC's Chinatown for the last 25 years. His earlier projects for HBO, ESPN, Disney+, Netflix and FRONTLINE have focused on everything from the Egyptian Revolution to the wars in Iraq and Afghanistan, the American criminal justice system, and the School of American Ballet. His filmmaking has taken him to more than 50 different countries for films including Baghdad ER, In Tahrir Square and Wartorn. He has received two Academy Award nominations for Redemption and China’s Unnatural Disaster: The Tears of Sichuan Province and has been recognized with two Columbia DuPont Awards, a Peabody Award, an Overseas Press Club Award, six Emmy Awards and a Director’s Guild nomination.`}</p>
       </div>
 
-      <div className="flex-grow border-t border-gray-400 my-4"></div>
+      <Divider />
 
       <h4 className="uppercase">About DCTV</h4>
       <div>

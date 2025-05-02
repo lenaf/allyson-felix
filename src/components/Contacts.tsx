@@ -6,7 +6,7 @@ import Section from "@/components/common/Section";
 export default function Contacts() {
   return (
 
-    <Section id='contacts' className="prose p-4 sm:p-8 md:p-12" >
+    <Section id='contacts' className="prose px-4 sm:px-8 md:px-12 py-12" >
 
       <div >
         <h2 className="mb-2">PRESS CONTACT</h2>
