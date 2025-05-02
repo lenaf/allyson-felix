@@ -57,7 +57,8 @@ const MobileNav = () => {
         <div className="fixed mt-8 h-full">
           <NavLinks
             className='flex flex-col gap-8 px-12'
-            linkClass='text-2xl font-bold tracking-widest text-gray-900' />
+            linkClass='text-2xl font-bold tracking-widest text-gray-900'
+            onLinkClick={onToggleNav} />
         </div>
       </div>
     </>

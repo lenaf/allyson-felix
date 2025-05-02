@@ -5,7 +5,7 @@ import Link from '../common/Link'
 import LinkAsButton from '../common/LinkAsButton'
 import siteData from '@/data/siteData'
 
-const NavLinks = ({ linkClass, ...rest }: React.HTMLProps<HTMLElement> & { linkClass?: string }) => {
+const NavLinks = ({ linkClass, onLinkClick, ...rest }: React.HTMLProps<HTMLElement> & { linkClass?: string, onLinkClick?: () => void }) => {
   const [activeId, setActiveId] = useState<string | null>(null)
 
   useEffect(() => {
@@ -38,6 +38,7 @@ const NavLinks = ({ linkClass, ...rest }: React.HTMLProps<HTMLElement> & { linkC
         return (
           <Link
             key={link.title}
+            onClick={onLinkClick}
             href={link.href}
             className={`${linkClass ?? ''} ${isActive ? 'underline underline-offset-8 decoration-primary' : ''}`}
           >
@@ -45,7 +46,7 @@ const NavLinks = ({ linkClass, ...rest }: React.HTMLProps<HTMLElement> & { linkC
           </Link>
         )
       })}
-      <LinkAsButton className="btn-primary rounded-none" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+      <LinkAsButton onClick={onLinkClick} className="btn-primary rounded-none" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
         Get Tickets
       </LinkAsButton>
     </nav>
