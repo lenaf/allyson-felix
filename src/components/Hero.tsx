@@ -20,7 +20,7 @@ export default function Hero() {
         alt={'Tribeca Festival Official Selection'}
         src={laurel}
         width={200}
-        className={`absolute top-5 left-5 w-20 md:top-10 md:left-10 md:w-36`}
+        className={`absolute top-5 left-5 w-24 md:top-10 md:left-10 md:w-36`}
       />
     </Section>
 
