@@ -19,7 +19,6 @@ export default function Hero() {
       <Image
         alt={'Tribeca Festival Official Selection'}
         src={laurel}
-        placeholder="blur"
         width={200}
         className={`absolute top-5 left-5 w-20 md:top-10 md:left-10 md:w-36`}
       />
