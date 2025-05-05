@@ -20,14 +20,14 @@ export default function BackgroundImage(
         alt={alt}
         src={src}
         placeholder="blur"
-        className={`-z-10 absolute aspect-video w-full object-cover object-top ${srcMobile ? 'desktop' : ''}`}
+        className={`-z-10 absolute aspect-video w-full object-cover object-center ${srcMobile ? 'desktop' : ''}`}
       />
       {srcMobile && <Image
         fill
         alt={alt}
         src={srcMobile}
         placeholder="blur"
-        className={`-z-10 absolute w-full h-full object-cover object-top mobile}`}
+        className={`-z-10 absolute w-full h-full object-cover object-center mobile}`}
       />}
     </>
   );
