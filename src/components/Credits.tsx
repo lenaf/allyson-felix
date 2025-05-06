@@ -5,11 +5,11 @@ import SectionHeader from "./common/SectionHeader";
 import Divider from "./common/Divider";
 
 const Role = ({ children }) => <h3 className="text-primary uppercase">{children}</h3>
-const Description = ({ children }) => <span className="ml-1 text-gray-300 ">{children}</span>
+const Description = ({ children }) => <span className="ml-3 text-sm text-gray-300 ">{children}</span>
 
 const Credit = ({ role, credit }) => <div className="mb-3">
   <Role>{role}</Role>
-  {credit}
+  <div className="text-lg"> {credit}</div>
 </div>
 
 export default function Credits() {
