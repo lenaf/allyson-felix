@@ -1,7 +1,7 @@
 "use client"
 
-export default function Divider() {
+export default function Divider({ className }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className="flex-grow w-full relative border-t border-gray-400 my-6"></div>
+    <div className={`${className ?? ''} flex-grow w-full relative border-t border-gray-400`}></div>
   );
 }
