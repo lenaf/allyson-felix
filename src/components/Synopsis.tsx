@@ -10,13 +10,21 @@ export default function Synopsis() {
       <SectionHeader>Synopsis</SectionHeader>
 
       <p>
-        <b className="uppercase font-black italic">She Runs the World</b> is the electrifying story of <b>Allyson Felix</b>, the most decorated track and field athlete in history, who didn’t just break records—she redefined what it means to be a champion.
+        <b className="uppercase font-black italic mr-1">She Runs the World </b> is the electrifying story of Allyson Felix, the most decorated Olympic track and field athlete in history, who risked everything to fight for what she knew was right.
       </p>
       <p>
-        At the peak of her career, Allyson faced a life-threatening pregnancy, a public fight for maternal protections in sports, and a high-stakes showdown with Nike, the most powerful brand in athletics. By 2017, Allyson had already competed in four Olympics and had just brought home two gold medals and a silver from Rio — yet despite her accomplishments, Nike proposed slashing her salary by 70%. When she pushed to include maternity protections in her contract, they refused. Instead of backing down, she bet on herself—walking away from one of  the world’s biggest sportswear companies and launching her own sneaker brand, the first ever designed specifically for women’s feet. Allyson turned her personal and professional battles into a movement, compelling a billion dollar industry to change.
+        At the peak of her career, Allyson and her husband learned she was pregnant, yet their delight was tempered by a concern that her sponsor - Nike - would financially penalize her. Their worst fears were realized; a public fight for maternal protections in sports ensued. Nike had proposed slashing her salary by 70% even though it still planned to use her image widely. Although Nike eventually was willing to agree to special protection for Allyson, one of their most forward-facing women athletes, Allyson was adamant that maternal protections for all female athletes be promised by Nike, not just those few with clout. Nike refused. Instead of accepting the favorable conditions offered to her specifically and letting other women battle for themselves, Allyson refused to back down and went public with their disagreement. She walked away from the guaranteed income from Nike and launched her own sneaker brand, the first ever designed specifically for women’s feet - and went on to unprecedented Olympic glory.
       </p>
       <p>
-        Featuring never-before-seen archival footage, the film delves deep into Allyson’s personal story, far beyond athletics—both on and off the track. Allyson’s story is about more than speed, it’s about courage, transformation, and the power of standing up for what’s right.      </p>
+        Allyson had successfully turned her personal and professional battles into a movement, compelling a billion dollar industry to change.
+      </p>
+      <p>
+        This longitudinal film, featuring never-before-seen archival footage gathered over the course of 35 years, delves deep into Allyson’s career and personal story, her family, her drive, her charm, her joy and her beliefs.
+      </p>
+      <p>
+        <span className="italic">She Runs the World</span> is a testament to how each of us can make a difference by being true to our own values.
+
+      </p>
 
     </Section>
 
