@@ -39,7 +39,7 @@ export default function Screenings() {
             181–189 2nd Ave, NY
           </a>
           <div className="">Sat, June 7th 2025 <span>3:15 PM</span> </div>
-          <div className="">Sat, June 8th 2025 <span>6:15 PM</span> </div>
+          <div className="">Sun, June 8th 2025 <span>6:15 PM</span> </div>
           <div className="">Sat, June 14th 2025 <span>12:15 PM</span> </div>
           <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
             <span className="=">Tickets</span>
