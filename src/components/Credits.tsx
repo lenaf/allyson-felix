@@ -44,18 +44,17 @@ export default function Credits() {
               <>
                 <div>Tonya Lewis Lee</div>
                 <div>
-                  Tory Burch,
-                  Laurie Fabiano,
-                  Nina and David Fialkow,
-                  Beth Kojima,
-                  Janice Y.K. Li,
-                  Sarah Bae,
-                  Melony and Adam Lewis,
                   Crystal McCrary McGuire,
-                  Dr. Amelia Quist-Ogunlesi,
+                  Beth Kojima,
+                  Melony & Adam Lewis,
+                  Janice Y.K. Lee & Sarah Bae,
+                  Dr. Amelia Ogunlesi,
                   Carrie Walton Penner,
+                  Nina Fialkow & David Fialkow,
+                  Tory Burch,
+                  Danny Strong,
+                  Laurie Fabiano,
                   Brenda Robinson,
-                  Danny Strong
                 </div>
               </>}
           />
