@@ -35,7 +35,11 @@ export default function Credits() {
         </div>
         <div>
           <Credit role='Cinematographer' credit={`Nasreen Alkhateeb`} />
-          <Credit role='Editor' credit={`Frances Henderson`} />
+          <Credit role='Editors' credit={
+            <>
+              <div>Frances Henderson<Description>Lead Editor </Description></div>
+              <div>Bryan Chang</div>
+            </>} />
           <Credit role='Composer' credit={`Kathryn Bostic`} />
           <Credit role='Executive Producers'
             // alphabatize
