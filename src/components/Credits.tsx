@@ -62,6 +62,7 @@ export default function Credits() {
                 </div>
               </>}
           />
+          <Credit role='GRAPHIC DESIGN BY' credit={`&Walsh`} />
         </div>
       </div>
 
@@ -109,6 +110,7 @@ export default function Credits() {
         <div className="uppercase">DIRECTOR OF PHOTOGRAPHY</div>
         <p className="mt-2">{`Nasreen Alkhateeb is an award winning cinematographer whose work illuminates historically excluded voices by normalizing intersectional storytelling. By centering racial injustice, disability inequity, marginalized genders, stigmatized sexual identities, the first woman VP, and the largest telescope NASA has ever constructed, Nasreen thrives as a leader in films that shift our culture. Her ability to motivate audiences is a direct result of approaching each story through intersectional identities. Based in Los Angeles California, Nasreen was born in Oakland California, and raised in Northern Virginia outside of Washington D.C. She holds a degree in Fine Arts from Pratt Institute in Brooklyn, New York. Her lens has captured Kamala Harris’ Vice Presidential campaign, the Emmy award series Uncomfortable Conversations with a Black Man, Netflix’s Unknown Cosmic Time Machine, Netflix’s Supreme Models: Iconic Black Women Who Revolutionized Fashion, Apple’s Dear episode with Billy Porter, and feature film She Runs the World at the Tribeca Film Festival. In addition to lensing scripted films centering Black, Queer, and Disabled lead characters, her credits include NASA, United Nations, Microsoft, and the Women’s March. Supported by the Sundance Institute, the American Society of Cinematographers, the Ford Foundation, the Center for Cultural Power, GettyImages, Women In Film, American Film Institute Conservatory. Forbes described her as “breaking barriers.”`}</p>
       </div>
+
       <div>Complete filmmaker bios in progress.</div>
 
       <Divider className="my-6" />
