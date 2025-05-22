@@ -5,6 +5,8 @@ import Divider from '../common/Divider'
 import Logo from '../common/Logo'
 import DCTV from "public/images/DCTV.png"
 import getToYes from "public/images/getToYesWhite.png"
+import together from "public/images/together.png"
+
 import Image from "next/image"
 
 export default function Footer() {
@@ -20,6 +22,7 @@ export default function Footer() {
           <div className='justify-self-start mr-auto'>{`© 2025 DCTV`}</div>
           <a href='https://www.dctvny.org/s/' target="_blank"> <Image height={50} src={DCTV} alt='DCTV Logo' /></a>
           <a href='https://gettoyesproductions.com/' target="_blank"><Image height={50} src={getToYes} alt='Get to Yes Logo' /></a>
+          <a href='https://www.togethxr.com/' target="_blank"><Image height={50} width={125} src={together} alt='Get to Yes Logo' /></a>
         </div>
       </div>
     </footer>
