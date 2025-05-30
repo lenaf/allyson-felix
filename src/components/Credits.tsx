@@ -29,38 +29,42 @@ export default function Credits() {
               <li>Jackie Joyner-Kersee<Description>Six-time Olympic medalist </Description> </li>
               <li>Coach Bob Kersee <Description>Allyson’s former coach </Description> </li>
             </ul>} />
-          <Credit role='Directors' credit={`Perri Peltz, Matthew O'Neill`} />
-          <Credit role='Producer' credit={`Lisa Binns`} />
+          <Credit role='PRODUCED & DIRECTED BY' credit={
+            <div>
+              <div>Perri Peltz</div>
+              <div>Matthew O'Neill</div>
+            </div>
+          } />
+          <Credit role='PRODUCED BY' credit={`Lisa Binns`} />
           <Credit role='Co-Producer' credit={`Julia Rosenheim`} />
+          <Credit role='Edited By' credit={`Frances Henderson`} />
+          <Credit role='Cinematographer' credit={`Nasreen Alkhateeb`} />
+          <Credit role='Editor' credit={'Bryan Chang'} />
+          <Credit role='Associate Editor' credit={'Nicole Del Cioppio'} />
         </div>
         <div>
-          <Credit role='Cinematographer' credit={`Nasreen Alkhateeb`} />
-          <Credit role='Editors' credit={
-            <>
-              <div>Frances Henderson<Description>Lead Editor </Description></div>
-              <div>Bryan Chang</div>
-            </>} />
-          <Credit role='Composer' credit={`Kathryn Bostic`} />
-          <Credit role='Executive Producers'
-            // alphabatize
-            // Tonya first
-            credit={
-              <>
-                <div>Tonya Lewis Lee</div>
-                <div>
-                  Crystal McCrary McGuire,
-                  Beth Kojima,
-                  Melony & Adam Lewis,
-                  Janice Y.K. Lee & Sarah Bae,
-                  Dr. Amelia Ogunlesi,
-                  Carrie Walton Penner,
-                  Nina Fialkow & David Fialkow,
-                  Tory Burch,
-                  Danny Strong,
-                  Laurie Fabiano,
-                  Brenda Robinson,
-                </div>
-              </>}
+          <Credit role='Music By' credit={`Kathryn Bostic`} />
+          <Credit role='Music SUPERVISOR' credit={`Jonathan Zalben`} />
+          <Credit role='EXECUTIVE PRODUCED BY' credit={`Tonya Lewis Lee`} />
+          <Credit role='EXECUTIVE PRODUCERS'
+            credit={<>
+              <div>Crystal McCrary Mcguire </div>
+              <div>Beth Kojima</div>
+              <div>Melony & Adam Lewis</div>
+              <div>Janice Y.K. Lee & Sarah Bae</div>
+              <div>Dr. Amelia Ogunlesi</div>
+              <div>Carrie Walton Penner</div>
+              <div>Nina Fialkow & David Fialkow</div>
+              <div>Regina K. Scully</div>
+              <div>Ruth Ann Harnisch</div>
+              <div>Tory Burch</div>
+              <div>Danny Strong</div>
+              <div>Sue Bird</div>
+              <div>Jessica Robertson</div>
+              <div>Kayla Johnson</div>
+              <div>Brenda Robinson</div>
+              <div>Laurie Fabiano</div>
+            </>}
           />
           <Credit role='GRAPHIC DESIGN BY' credit={`&Walsh`} />
         </div>
