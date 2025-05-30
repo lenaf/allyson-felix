@@ -31,8 +31,8 @@ export default function Credits() {
             </ul>} />
           <Credit role='PRODUCED & DIRECTED BY' credit={
             <div>
-              <div>Perri Peltz</div>
-              <div>Matthew O'Neill</div>
+              <div>{`Perri Peltz`}</div>
+              <div>{`Matthew O'Neill`}</div>
             </div>
           } />
           <Credit role='PRODUCED BY' credit={`Lisa Binns`} />
