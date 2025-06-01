@@ -62,10 +62,10 @@ ul li {
 
 @layer components {
   .desktop {
-    @apply hidden xs:block;
+    @apply hidden lg:block;
   }
 
   .mobile {
-    @apply block xs:hidden;
+    @apply block lg:hidden;
   }
 }

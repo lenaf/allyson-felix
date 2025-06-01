@@ -6,6 +6,7 @@ const siteData = {
   routes: [
     { href: '/', title: 'Home', id: 'home' },
     { href: '#synopsis', title: 'Synopsis', id: 'synopsis' },
+    { href: '#impact', title: 'Impact', id: 'impact' },
     { href: '#credits', title: 'Credits', id: 'credits' },
   ],
 }
