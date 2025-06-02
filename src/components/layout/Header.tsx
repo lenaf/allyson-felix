@@ -33,12 +33,13 @@ const Header = () => {
         </LinkAsButton>
       </Banner>
 
-      <div className="h-20 px-8 flex items-center justify-between uppercase">
-        <Link href="/">
-          <Logo width={300} />
+      <div className="h-24 px-8 flex items-center justify-between uppercase">
+        <Link href="/" className='md:w-96'>
+          <h1> <Logo className='w-full' /></h1>
         </Link>
+
         <div className="desktop">
-          <NavLinks className="flex items-center gap-4 md:gap-8" />
+          <NavLinks linkClass='text-lg' className="flex items-center gap-4 md:gap-8" />
         </div>
         <MobileNav />
       </div>

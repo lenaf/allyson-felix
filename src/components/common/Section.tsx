@@ -7,7 +7,7 @@ export default function Section(
   }: React.HTMLProps<HTMLDivElement>) {
   return (
     <section
-      className={`w-full relative scroll-mt-20 ${className ?? ''}`}
+      className={`w-full relative scroll-mt-24 ${className ?? ''}`}
       {...rest}
     >
       {children}

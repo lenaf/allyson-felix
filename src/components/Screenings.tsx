@@ -3,14 +3,18 @@
 import Section from "@/components/common/Section";
 
 import LinkAsButton from "./common/LinkAsButton";
+import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
 
 export default function Screenings() {
   return (
 
     <Section id='screening' className="prose px-4 sm:px-8 md:px-12 py-12" >
+      <SectionHeader>Screenings</SectionHeader>
+
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
-          <h2 className="text-primary tracking-normal mb-2">WORLD PREMIERE</h2>
+
+          <SectionSubHeader>WORLD PREMIERE</SectionSubHeader>
           <div className="text-white text-lg">SVA Theatre 1 - Silas </div>
           <a
             href="https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011"
@@ -28,7 +32,8 @@ export default function Screenings() {
         </div>
 
         <div >
-          <h2 className="text-primary tracking-normal mb-2">MORE SCREENINGS</h2>
+
+          <SectionSubHeader>MORE SCREENINGS</SectionSubHeader>
           <div className="text-white text-lg">Village East by Angelika </div>
           <a
             href="https://www.google.com/maps?q=181-189+2nd+Ave,+New+York,+NY+10003"

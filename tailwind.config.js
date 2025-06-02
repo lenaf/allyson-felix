@@ -79,20 +79,20 @@ module.exports = {
             h1: {
               fontWeight: theme('fontWeight.black'),
               fontSize: theme('fontSize.5xl'),
-              letterSpacing: theme('letterSpacing.tight'),
+              letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
             },
             h2: {
-              fontWeight: theme('fontWeight.black'),
-              fontSize: theme('fontSize.3xl'),
-              letterSpacing: theme('letterSpacing.tight'),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: theme('fontSize.4xl'),
+              letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
               marginTop: 0,
               color: 'inherit'
             },
             h3: {
               fontWeight: theme('fontWeight.black'),
-              fontSize: theme('fontSize.xl'),
+              fontSize: theme('fontSize.2xl'),
               letterSpacing: theme('letterSpacing.normal'),
               marginBottom: 0,
               marginTop: 0,
@@ -115,7 +115,8 @@ module.exports = {
             p: {
               fontWeight: theme('fontWeight.thin'),
               letterSpacing: theme('letterSpacing.wide'),
-              color: 'inherit'
+              color: 'inherit',
+
             },
             'ul > li': {
               paddingInlineStart: 0,

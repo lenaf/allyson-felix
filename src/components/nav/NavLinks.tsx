@@ -46,7 +46,7 @@ const NavLinks = ({ linkClass, onLinkClick, ...rest }: React.HTMLProps<HTMLEleme
           </Link>
         )
       })}
-      <LinkAsButton onClick={onLinkClick} className="btn-primary rounded-none" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
+      <LinkAsButton onClick={onLinkClick} className={`${linkClass ?? ''} btn-primary rounded-none`} href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
         Get Tickets
       </LinkAsButton>
     </nav>

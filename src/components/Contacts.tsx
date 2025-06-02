@@ -1,7 +1,7 @@
 "use client"
 
 import Section from "@/components/common/Section";
-import SectionHeader from "./common/SectionHeader";
+import { SectionHeader } from "./common/SectionHeader";
 
 
 export default function Contacts() {
