@@ -9,7 +9,7 @@ export default function Screenings() {
   return (
 
     <Section id='screening' className="prose px-4 sm:px-8 md:px-12 py-12" >
-      <SectionHeader>Screenings</SectionHeader>
+      {/* <SectionHeader>Screenings</SectionHeader> */}
 
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
