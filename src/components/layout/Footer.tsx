@@ -40,13 +40,13 @@ export default function Footer() {
       <Divider className='my-4' />
       <footer className='prose px-4 sm:px-8 md:px-12 py-6 leading-5	'>
 
-        <div className="mb-2 flex p-4 justify-center items-center gap-8 space-x-2 text-sm">
+        <div className="mb-2 flex p-4 justify-center items-center gap-1 sm:gap-2 md:gap-8 space-x-2 text-sm">
           <a href='https://www.dctvny.org/s/' target="_blank"> <Image height={50} src={DCTV} alt='DCTV Logo' /></a>
           <a href='https://gettoyesproductions.com/' target="_blank"><Image height={50} src={getToYes} alt='Get to Yes Logo' /></a>
           <a href='https://www.togethxr.com/' target="_blank"><Image height={50} width={125} src={together} alt='Togethxr Logo' /></a>
           <a href='https://artemisrising.org/' target="_blank"><Image height={50} width={125} src={artemis} alt='Artemis Rising Foundation Loho' /></a>
           <a href='https://thehf.org/' target="_blank"><Image height={50} width={125} src={harnish} alt='The Harshisch Foundation Logo' /></a>
-          <a href='' target="_blank"><Image height={50} width={40} src={mastone} alt='Madstone Logo' /></a>
+          <a href='https://madstonecompany.com/' target="_blank"><Image height={50} width={40} src={mastone} alt='Madstone Logo' /></a>
         </div>
 
         <div className="flex justify-center items-center text-sm">
