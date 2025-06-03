@@ -34,7 +34,7 @@ const Header = () => {
       </Banner>
 
       <div className="h-24 px-8 flex items-center justify-between uppercase">
-        <Link href="/" className='md:w-96'>
+        <Link href="/" className='w-96'>
           <h1> <Logo className='w-full' /></h1>
         </Link>
 
