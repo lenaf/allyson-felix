@@ -23,7 +23,7 @@ export default function RootLayout({
     }}>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={`${inter.className} `}>
-        <div className="flex flex-col justify-between font-sans">
+        <div className="flex flex-col justify-between font-sans underline-offset-4">
           <Header />
           <main className="mb-auto h-full">{children}</main>
           <Footer />

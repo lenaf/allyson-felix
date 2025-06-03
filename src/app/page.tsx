@@ -20,10 +20,10 @@ export default function Home() {
       <Impact />
       <Divider />
       <Credits />
-      <Divider />
+      {/* <Divider />
       <Contacts />
       <Divider />
-      <Sales />
+      <Sales /> */}
     </div>
   );
 }
