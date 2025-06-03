@@ -75,6 +75,7 @@ module.exports = {
                 color: `${theme('colors.primary.600')}`,
               },
               code: { color: theme('colors.primary.400') },
+              underlineOffset: 4,
             },
             h1: {
               fontWeight: theme('fontWeight.black'),
@@ -117,6 +118,7 @@ module.exports = {
               letterSpacing: theme('letterSpacing.normal'),
               lineHeight: 1.5,
               color: theme('colors.gray.300'),
+              marginTop: '4px',
 
             },
             'ul > li': {

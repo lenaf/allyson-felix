@@ -10,7 +10,7 @@ export default function Synopsis() {
       <SectionHeader>Synopsis</SectionHeader>
 
       <p>
-        <b className="uppercase font-black italic mr-1">She Runs the World </b> is the electrifying story of Allyson Felix, the most decorated Olympic track and field athlete in history, who risked everything to fight for what she knew was right.
+        <b className="uppercase font-black italic text-gray-100 mr-1">She Runs the World </b> is the electrifying story of Allyson Felix, the most decorated Olympic track and field athlete in history, who risked everything to fight for what she knew was right.
       </p>
       <p>
         At the peak of her career, Allyson and her husband learned she was pregnant, yet their delight was tempered by a concern that her sponsor - Nike - would financially penalize her. Their worst fears were realized; a public fight for maternal protections in sports ensued. Nike had proposed slashing her salary by nearly 70% even though it still planned to use her image widely. Although Nike eventually was willing to agree to special protection for Allyson, one of their most forward-facing women athletes, Allyson was adamant that maternal protections for all female athletes be promised by Nike, not just those few with clout. Nike refused. Instead of accepting the favorable conditions offered to her specifically and letting other women battle for themselves, Allyson refused to back down and went public with their disagreement. She walked away from the guaranteed income from Nike and launched her own sneaker brand, the first ever designed specifically for women’s feet - and went on to unprecedented Olympic glory.
