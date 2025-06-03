@@ -11,10 +11,10 @@ export default function Footer() {
     <div>
       <Divider className='my-4' />
 
-      <div className='prose px-4 sm:px-8 md:px-12 py-12 leading-5 md:grid md:grid-cols-2 gap-12 '>
+      <div className='prose px-4 sm:px-8 md:px-12 py-12 leading-5 flex flex-col md:grid md:grid-cols-2 gap-12 '>
         <div >
           <h2 className='uppercase text-primary text-xl mb-2'>Press Contact</h2>
-          <div className="text-gray-100 text-xl mb-2">Lana Iny </div>
+          <div className="text-gray-100 text-lg mb-1">Lana Iny </div>
           <div className="m-0">Downtown Community Television Center  </div>
           <div className="">87 Lafayette Street </div>
           <div className=" mb-2">New York, NY 10013</div>
@@ -26,9 +26,9 @@ export default function Footer() {
           </a>
         </div>
 
-        <div >
-          <h2 className='uppercase text-primary text-xl mb-2'>Worldwide Sales</h2>
-          <div className="text-gray-100 text-xl mb-2">The Film Sales Company </div>
+        <div>
+          <h2 className='uppercase text-primary text-xl mb-1'>Worldwide Sales</h2>
+          <div className="text-gray-100 text-lg mb-2">The Film Sales Company </div>
           <div className="">Andrew Herwitz, President </div>
         </div>
 
