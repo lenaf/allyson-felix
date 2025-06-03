@@ -68,9 +68,9 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: 'none',
-            color: theme('colors.gray.100'),
+            color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.200'),
               '&:hover': {
                 color: `${theme('colors.primary.600')}`,
               },
@@ -114,8 +114,9 @@ module.exports = {
             },
             p: {
               fontWeight: theme('fontWeight.thin'),
-              letterSpacing: theme('letterSpacing.wide'),
-              color: 'inherit',
+              letterSpacing: theme('letterSpacing.normal'),
+              lineHeight: 1.5,
+              color: theme('colors.gray.300'),
 
             },
             'ul > li': {

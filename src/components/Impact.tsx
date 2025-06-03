@@ -8,7 +8,7 @@ import Divider from "./common/Divider";
 const Resource = ({ title, description, link }) => (
   <div className="mb-4">
     <a href={link} className="text-primary text-bold text-lg underline-offset-4">{title}</a>
-    <p className="text-gray-300 my-1"> {description}</p>
+    <p className="my-1"> {description}</p>
   </div>
 )
 
@@ -21,23 +21,15 @@ export default function Impact() {
       <SectionSubHeader>The Problem</SectionSubHeader>
 
       <p>
-        The U.S. maternal mortality rate is more than <span className="">10 times</span> higher than that of other high-income countries. Black women are dying at 3 to 4 times the rate of white women during and after childbirth. 80% of maternal deaths can be avoided.
+        The U.S. maternal mortality rate is more than <span className="">10 times</span> higher than that of other high-income countries. Black women are dying at 3 to 4 times the rate of white women during and after childbirth. According to the CDC, more than 80 percent of pregnancy-related deaths in America are preventable.
       </p>
 
       <Divider className="my-6" />
+      <SectionSubHeader>The Call to Action</SectionSubHeader>
+      <p className="my-2"> <b className="font-black italic mr-1">She Runs the World </b>  is more than a film—Allysons story is a call to action, accountability, and positive change in maternal health.</p>
+      <p className="my-2"> Allyson Felix used her voice. Now it’s our turn.</p>
+      <p className="my-2 text-primary text-bold">Watch the film. Share the message. Join the movement.</p>
 
-      <SectionSubHeader>Press</SectionSubHeader>
-
-      <div className="text-primary text-bold text-lg">She Runs The World: The Urgency of Maternal Health</div>
-      <div>Thursday, June 5th 2025 11:00 AM ET | <a href=''>Listen on SiriusXM </a></div>
-      <div className="text-gray-300">
-        <p className="my-2">
-          The creative team behind She Runs The World convenes for an important hour-long conversation on power, parenthood, and fixing the maternal health crisis
-        </p>
-        <p className="my-2">
-          Join director and SiriusXM host Perri Peltz DrPH, for a conversation with five-time Olympian Allyson Felix, birthFUND founder Elaine Welteroth, Executive Producer of She Runs the World and Peabody-award winning Director of Aftershock Tonya Lewis Lee, and Dr. Avenel Joseph, Vice President of Policy at the Robert Wood Johnson Foundation. Together, they delve into the maternal health crisis in America, the urgency of telling Allyson’s story, and role of midwifery and equity in future solutions. Learn how you can engage in the future of maternal health in the United States.
-        </p>
-      </div>
 
 
       <Divider className="my-6" />
@@ -151,11 +143,19 @@ export default function Impact() {
       </div>
 
       <Divider className="my-6" />
-      <SectionSubHeader>Call to Action</SectionSubHeader>
-      <p className="my-2">Together, we can rewrite the story. </p>
-      <p className="my-2"> <b className="font-black italic mr-1">She Runs the World </b>  is more than a film—Allysons story is a call to action, accountability, and positive change in maternal health.</p>
-      <p className="my-2"> Allyson Felix used her voice. Now it’s time to use ours.</p>
-      <p className="my-2 text-xl text-bold">Watch the film. Share the message. Join the movement.</p>
+
+      <SectionSubHeader>An Important Conversation</SectionSubHeader>
+
+      <div className="text-primary text-bold text-lg">She Runs The World: The Urgency of Maternal Health</div>
+      <div>Thursday, June 5th 2025 11:00 AM ET | <a href=''>Listen on SiriusXM </a></div>
+      <div >
+        <p className="my-2">
+          The creative team behind She Runs The World convenes for an important hour-long conversation on power, parenthood, and fixing the maternal health crisis
+        </p>
+        <p className="my-2">
+          Join director and SiriusXM host Perri Peltz DrPH, for a conversation with five-time Olympian Allyson Felix, birthFUND founder Elaine Welteroth, Executive Producer of She Runs the World and Peabody-award winning Director of Aftershock Tonya Lewis Lee, and Dr. Avenel Joseph, Vice President of Policy at the Robert Wood Johnson Foundation. Together, they delve into the maternal health crisis in America, the urgency of telling Allyson’s story, and role of midwifery and equity in future solutions. Learn how you can engage in the future of maternal health in the United States.
+        </p>
+      </div>
 
     </Section>
 
