@@ -309,7 +309,7 @@ export default function Impact() {
                 <div>
                   <a
                     target="_blank"
-                    href={'https://onebrooklynhealth.org/donate'}
+                    href={'https://www.okbirthequity.org/donate'}
                   >
                     Support Oklahoma families in need with birthing care and doula training
                   </a>
