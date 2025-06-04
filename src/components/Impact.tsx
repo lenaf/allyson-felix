@@ -36,7 +36,7 @@ export default function Impact() {
 
       <Divider className="my-6" />
 
-      <SectionSubHeader>Resources</SectionSubHeader>
+      <SectionSubHeader>RESOURCES & HOW YOU CAN ENGAGE</SectionSubHeader>
       <div className="md:grid md:grid-cols-2 gap-8">
         <div>
           <Resource
@@ -290,7 +290,7 @@ export default function Impact() {
                 <div>
                   <a
                     target="_blank"
-                    href={'https://onebrooklynhealth.org/donate'}
+                    href={'https://www.thesocialcreatures.org/donate'}
                   >
                     Donate to help sustain and grow our programs
                   </a>
