@@ -362,7 +362,7 @@ export default function Impact() {
             description={
               <div>
                 <p className="my-1">
-                  Creating a community of scholars and partner institutions that contribute to the knowledge base and understanding of the determinants of mental health.
+                  Columbia Mailman works to address maternal mortality in the United States through groundbreaking research in partnership with community organizations.
                 </p>
                 <div>
                   <a
