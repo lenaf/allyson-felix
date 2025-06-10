@@ -76,9 +76,9 @@ export default function Impact() {
                 <div>
                   <a
                     target="_blank"
-                    href={'https://www.rwjf.org/en/grants/active-funding-opportunities.html'}
+                    href={'https://www.rwjf.org/en/grants/grantee-stories/2025/04/how-community-based-doula-care-can-help-solve-our-maternal-health-crisis.html'}
                   >
-                    Active Funding Opportunities</a>
+                    Learn more about solutions to the maternal health crisis</a>
                 </div>
               </div>
             }
