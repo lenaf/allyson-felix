@@ -377,18 +377,19 @@ export default function Impact() {
         </div>
       </div>
 
-      {/* <Divider className="my-6" />
+      <Divider className="my-6" />
 
       <SectionSubHeader>An Important Conversation</SectionSubHeader>
 
-      <div className="text-primary font-bold text-lg">She Runs The World: The Urgency of Maternal Health</div>
-      <div className="text-gray-100">Thursday, June 5th 2025 11:00 AM ET | <a href=''>Listen on SiriusXM </a></div>
+      <div className="text-primary font-bold text-lg"><i className="mr-1">She Runs The World:</i> The Urgency of Maternal Health</div>
+      <div className="text-gray-100"><a target="_blank" href='https://www.siriusxm.com/player/episode-audio/entity/8fe9fcf7-378b-95b0-ecbe-72151fbbc6fd?utm_medium=shared'>Listen on SiriusXM </a></div>
       <div >
         <p className="my-2">
-          In conjunction with Allyson’s story, the creative team behind She Runs The World hosted an important hour-long conversation on power, parenthood, and fixing the maternal health crisis.        </p>
+          In conjunction with Allyson’s story, the creative team behind She Runs The World hosted an important hour-long conversation on power, parenthood, and finding solutions to the maternal health crisis.
+        </p>
         <p className="my-2">
-          Tune in to hear Director and SiriusXM host Perri Peltz DrPH, in conversation with 11-time Olympic Medalist, Entrepreneur and Maternal Health Advocate Allyson Felix, birthFUND founder Elaine Welteroth, Executive Producer of She Runs the World and Peabody-award winning Director of Aftershock Tonya Lewis Lee, and Dr. Avenel Joseph, Vice President of Policy at the Robert Wood Johnson Foundation. Together, they delved into the maternal health crisis in America, the urgency of telling Allyson’s story, and role of midwifery and equity in future solutions. Listen to learn how you can engage in the future of maternal health in the United States.         </p>
-      </div> */}
+          Stream now to hear Director and SiriusXM host Perri Peltz DrPH, in conversation with 11-time Olympic Medalist, Entrepreneur and Maternal Health Advocate Allyson Felix, Award-winning journalist, NYT bestselling author, Television Host, and birthFUND Founder Elaine Welteroth, Executive Producer of She Runs the World and Peabody-award winning Director of Aftershock Tonya Lewis Lee, and Dr. Avenel Joseph, Interim Executive Vice President at the Robert Wood Johnson Foundation. Together, they delved into the maternal health crisis in America, the urgency of telling Allyson’s story, and the role of midwifery and universal healthcare in future solutions. Listen to learn how you can engage in the future of maternal healthcare in the United States.         </p>
+      </div>
 
     </Section>
 
