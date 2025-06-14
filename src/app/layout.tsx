@@ -4,6 +4,8 @@ import '../css/index.css'
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import siteData from "@/data/siteData";
+import { Analytics } from '@vercel/analytics/next';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,11 @@ export default function RootLayout({
       <body className={`${inter.className} `}>
         <div className="flex flex-col justify-between font-sans underline-offset-4">
           <Header />
-          <main className="mb-auto h-full">{children}</main>
+          <main className="mb-auto h-full">
+            {children}
+            <Analytics />
+            <GoogleAnalytics gaId="G-J3C3L95REK" />
+          </main>
           <Footer />
         </div>
       </body>
