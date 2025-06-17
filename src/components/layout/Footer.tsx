@@ -35,7 +35,10 @@ export default function Footer() {
         <div>
           <h2 className='uppercase text-primary text-xl mb-1'>Worldwide Sales</h2>
           <div className="text-gray-100 text-lg mb-2">The Film Sales Company </div>
-          <div className="">Andrew Herwitz, President </div>
+          <div className="mb-2">Andrew Herwitz, President </div>
+          <a href="andrew.herwitz@filmsalescorp.com" className=" underline hover:text-primary transition block">
+            andrew.herwitz@filmsalescorp.com
+          </a>
         </div>
 
       </div>
