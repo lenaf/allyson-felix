@@ -324,14 +324,21 @@ export default function Impact() {
             description={
               <div>
                 <p className="my-1">
-                  We are BIPOC-led, multilingual and serving our community with the desire to create a maternity care system that centers the marginalized.
-                </p>
+                  We are BIPOC-led, multilingual and serving our community with the desire to create a maternity care system that centers the marginalized.                </p>
                 <div>
                   <a
                     target="_blank"
-                    href={'https://thebirthingplace.co/support-our-growth/'}
+                    href={'https://give.chcimpact.org/p/the-birthing-place%20Bronx'}
                   >
-                    $5M Campaign to Expand The Birthing Place in the Bronx
+                    Support our $5M campaign to build our Birth Center
+                  </a>
+                </div>
+                <div>
+                  <a
+                    target="_blank"
+                    href={'https://www.welcometomaryam.com/'}
+                  >
+                    Learn more about provision of care and our collaborative model
                   </a>
                 </div>
               </div>
