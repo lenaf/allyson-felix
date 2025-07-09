@@ -88,11 +88,11 @@ export default function Screenings() {
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
           <SectionSubHeader>Upcoming</SectionSubHeader>
-          {upcomingScreenings.map(screening => <Screening screening={screening} />)}
+          {upcomingScreenings.map((screening, i) => <Screening screening={screening} key={i} />)}
         </div>
         <div >
           <SectionSubHeader>Past</SectionSubHeader>
-          {pastScreenings.map(screening => <Screening screening={screening} />)}
+          {pastScreenings.map((screening, i) => <Screening screening={screening} key={i} />)}
         </div>
       </div>
 
