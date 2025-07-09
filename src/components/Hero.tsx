@@ -4,7 +4,7 @@ import Section from "@/components/common/Section";
 import background from "public/images/medals_9:16.jpg"
 import laurel from "public/images/laurel.png"
 import laurel2 from "public/images/BFF_Laurels2025_OFFICIAL SELECTION_W.png"
-
+import laurel3 from "public/images/Laurels The MVFF 2025 white.png"
 
 import BackgroundImage from "./common/BackgroundImage";
 
@@ -13,7 +13,7 @@ import Image from "next/image"
 export default function Hero() {
   return (
 
-    <Section id='home' className='flex h-[100vw] md:h-[56.25vw] lg:h-[50vw] xl:h-[45vw] flex-col justify-top items-left gap-4' >
+    <Section id='home' className='flex h-[80vw] md:h-[60vw] lg:h-[50vw] xl:h-[40vw] flex-col justify-top items-left gap-4' >
       <BackgroundImage
         alt={'Allyson Felix wearing her olympic medals'}
         src={background}
@@ -29,6 +29,12 @@ export default function Hero() {
         <Image
           alt={'BGG Official Selection Laurel'}
           src={laurel2}
+          width={200}
+          className={`w-24 md:w-36 mb-8`}
+        />
+        <Image
+          alt={"The Martha's Vineyard Film Festival Laurel"}
+          src={laurel3}
           width={200}
           className={`w-24 md:w-36`}
         />

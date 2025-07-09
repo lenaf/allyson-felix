@@ -24,14 +24,14 @@ const Header = () => {
     // : 'bg-gradient-to-b from-base-100 from-30% to-transparent'
 
     >
-      <Banner className="text-xs">
+      {/* <Banner className="text-xs">
         <div >WORLD PREMIERE</div>
         <div>TRIBECA FESTIVAL</div>
         <LinkAsButton className="h-6 min-h-6 gap-2 shadow-none btn-primary p-0" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
           <span className="=">Tickets</span>
           <span aria-hidden="true">&rarr;</span>
         </LinkAsButton>
-      </Banner>
+      </Banner> */}
 
       <div className="h-24 px-4 sm:px-8 md:px-12 flex items-center justify-between uppercase">
         <Link href="/" className='w-96'>
