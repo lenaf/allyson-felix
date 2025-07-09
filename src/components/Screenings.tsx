@@ -5,55 +5,98 @@ import Section from "@/components/common/Section";
 import LinkAsButton from "./common/LinkAsButton";
 import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
 
+type IScreening = {
+  theatre: string;
+  googleMapHref: string;
+  address: string;
+  dates: {
+    date: string;
+    time: string
+  }[];
+  ticketLink?: string;
+}
+const upcomingScreenings: IScreening[] = [
+  {
+    theatre: "The Grange Hall, West Tisbury",
+    googleMapHref: "https://www.google.com/maps/place/Grange+Hall/@41.3802293,-70.6752851,17z/data=!3m1!4b1!4m6!3m5!1s0x89e524d95875b387:0xdfbd20718657ae8c!8m2!3d41.3802293!4d-70.6752851!16s%2Fg%2F11cpf9b5ws?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
+    address: "1067 State Rd, Vineyard Haven, MA",
+    dates: [
+      { date: "Thursday, July 10", time: "5:00 PM" },
+      { date: "Thursday, July 10", time: "8:00 PM" }
+
+    ],
+    ticketLink: "https://circuitarts.org/sherunstheworld"
+  },
+]
+
+const pastScreenings: IScreening[] = [
+  {
+    theatre: "SVA Theatre 1 - Silas",
+    googleMapHref: "https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011",
+    address: "333 W 23rd Street, NY",
+    dates: [{ date: "Thursday, June 5th 2025", time: "8:30 PM" }]
+  },
+  {
+    theatre: "Village East by Angelika",
+    googleMapHref: "https://www.google.com/maps?q=181-189+2nd+Ave,+New+York,+NY+10003",
+    address: " 181–189 2nd Ave, NY",
+    dates: [
+      { date: "Sat, June 7th 2025", time: "3:15 PM" },
+      { date: "Sun, June 8th 2025", time: "6:15 PM" },
+      { date: "Sat, June 14th 2025", time: "12:15 PM" }
+    ]
+  },
+  {
+    theatre: "Skylight Cinema",
+    googleMapHref: "https://www.google.com/maps/place/Skylight+Cinema/@36.3684428,-94.2132482,16z/data=!3m1!4b1!4m6!3m5!1s0x87c91a98d0b54cdf:0x147c1970e86cc757!8m2!3d36.3684385!4d-94.2106679!16s%2Fg%2F11gbxb90s5?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
+    address: "350 SW A St, Bentonville, AR",
+    dates: [
+      { date: "Wed, June 18th 2025", time: "6:30 PM" },
+    ]
+  },
+]
+
+const Screening = ({ screening }: { screening: IScreening }) => {
+  const { theatre, googleMapHref, address, dates, ticketLink } = screening;
+  return (
+    <div className="mb-4">
+      <div className="text-white text-lg">{theatre}</div>
+      <a
+        href={googleMapHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mb-4 no-underline hover:text-primary transition"
+      >
+        {address}
+      </a>
+      {dates.map(({ date, time }) => <div >{date} <span>{time}</span> </div>)}
+
+      {ticketLink && <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href={ticketLink} target="_blank">
+        <span className="=">Tickets</span>
+        <span aria-hidden="true">&rarr;</span>
+      </LinkAsButton>}
+    </div>
+  )
+}
+
 export default function Screenings() {
   return (
 
-    <Section id='screening' className="prose px-4 sm:px-8 md:px-12 py-12" >
-      {/* <SectionHeader>Screenings</SectionHeader> */}
+    <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12" >
+      <SectionHeader>Screenings</SectionHeader>
 
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
-
-          <SectionSubHeader>WORLD PREMIERE</SectionSubHeader>
-          <div className="text-white text-lg">SVA Theatre 1 - Silas </div>
-          <a
-            href="https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-4 no-underline hover:text-primary transition"
-          >
-            333 W 23rd Street, NY
-          </a>
-          <div className="">Thursday, June 5th 2025 <span>8:30 PM</span> </div>
-          <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
-            <span className="=">Tickets</span>
-            <span aria-hidden="true">&rarr;</span>
-          </LinkAsButton>
+          <SectionSubHeader>Upcoming</SectionSubHeader>
+          {upcomingScreenings.map(screening => <Screening screening={screening} />)}
         </div>
-
         <div >
-
-          <SectionSubHeader>MORE SCREENINGS</SectionSubHeader>
-          <div className="text-white text-lg">Village East by Angelika </div>
-          <a
-            href="https://www.google.com/maps?q=181-189+2nd+Ave,+New+York,+NY+10003"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-4 no-underline hover:text-primary transition"
-          >
-            181–189 2nd Ave, NY
-          </a>
-          <div className="">Sat, June 7th 2025 <span>3:15 PM</span> </div>
-          <div className="">Sun, June 8th 2025 <span>6:15 PM</span> </div>
-          <div className="">Sat, June 14th 2025 <span>12:15 PM</span> </div>
-          <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href="https://tribecafilm.com/films/she-runs-the-world-2025" target="_blank">
-            <span className="=">Tickets</span>
-            <span aria-hidden="true">&rarr;</span>
-          </LinkAsButton>
+          <SectionSubHeader>Past</SectionSubHeader>
+          {pastScreenings.map(screening => <Screening screening={screening} />)}
         </div>
       </div>
 
-    </Section>
+    </Section >
 
   );
 }
