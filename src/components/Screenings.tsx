@@ -83,15 +83,15 @@ export default function Screenings() {
   return (
 
     <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12" >
-      <SectionHeader>Screenings</SectionHeader>
+      {/* <SectionHeader>Screenings</SectionHeader> */}
 
       <div className="md:grid md:grid-cols-2 gap-8">
         <div >
-          <SectionSubHeader>Upcoming</SectionSubHeader>
+          <SectionSubHeader>Upcoming Screening</SectionSubHeader>
           {upcomingScreenings.map((screening, i) => <Screening screening={screening} key={i} />)}
         </div>
         <div >
-          <SectionSubHeader>Past</SectionSubHeader>
+          <SectionSubHeader>Past Screening</SectionSubHeader>
           {pastScreenings.map((screening, i) => <Screening screening={screening} key={i} />)}
         </div>
       </div>
