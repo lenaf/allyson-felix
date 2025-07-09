@@ -28,8 +28,8 @@ const upcomingFestivals: IFestival[] = [
       googleMapHref: "https://www.google.com/maps/place/Grange+Hall/@41.3802293,-70.6752851,17z/data=!3m1!4b1!4m6!3m5!1s0x89e524d95875b387:0xdfbd20718657ae8c!8m2!3d41.3802293!4d-70.6752851!16s%2Fg%2F11cpf9b5ws?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
       address: "1067 State Rd, Vineyard Haven, MA",
       dates: [
-        { date: "Thursday, July 10", time: "5:00 PM" },
-        { date: "Thursday, July 10", time: "8:00 PM" }
+        { date: "Thurs, July 10th", time: "5:00 PM" },
+        { date: "Thurs, July 10th", time: "8:00 PM" }
 
       ],
       ticketLink: "https://circuitarts.org/sherunstheworld"
@@ -45,7 +45,7 @@ const pastFestivals: IFestival[] = [
         theatre: "SVA Theatre 1 - Silas",
         googleMapHref: "https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011",
         address: "333 W 23rd Street, NY",
-        dates: [{ date: "Thursday, June 5th 2025", time: "8:30 PM" }]
+        dates: [{ date: "Thurs, June 5th 2025", time: "8:30 PM" }]
       },
       {
         theatre: "Village East by Angelika",
