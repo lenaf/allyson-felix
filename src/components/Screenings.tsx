@@ -69,7 +69,7 @@ const Screening = ({ screening }: { screening: IScreening }) => {
       >
         {address}
       </a>
-      {dates.map(({ date, time }) => <div >{date} <span>{time}</span> </div>)}
+      {dates.map(({ date, time }) => <div key={date}>{date} <span>{time}</span> </div>)}
 
       {ticketLink && <LinkAsButton className="h-6 min-h-6 text-lg gap-2 p-0 mb-4" href={ticketLink} target="_blank">
         <span className="=">Tickets</span>
