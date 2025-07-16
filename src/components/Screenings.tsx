@@ -21,20 +21,7 @@ type IFestival = {
   screenings: IScreening[]
 }
 const upcomingFestivals: IFestival[] = [
-  {
-    name: "Martha's Vineyard Film Festival",
-    screenings: [{
-      theatre: "The Grange Hall, West Tisbury",
-      googleMapHref: "https://www.google.com/maps/place/Grange+Hall/@41.3802293,-70.6752851,17z/data=!3m1!4b1!4m6!3m5!1s0x89e524d95875b387:0xdfbd20718657ae8c!8m2!3d41.3802293!4d-70.6752851!16s%2Fg%2F11cpf9b5ws?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
-      address: "1067 State Rd, Vineyard Haven, MA",
-      dates: [
-        { date: "Thurs, July 10th", time: "5:00 PM" },
-        { date: "Thurs, July 10th", time: "8:00 PM" }
 
-      ],
-      ticketLink: "https://circuitarts.org/sherunstheworld"
-    }]
-  }
 ]
 
 const pastFestivals: IFestival[] = [
@@ -71,6 +58,18 @@ const pastFestivals: IFestival[] = [
         ]
       },
     ]
+  }, {
+    name: "Martha's Vineyard Film Festival",
+    screenings: [{
+      theatre: "The Grange Hall, West Tisbury",
+      googleMapHref: "https://www.google.com/maps/place/Grange+Hall/@41.3802293,-70.6752851,17z/data=!3m1!4b1!4m6!3m5!1s0x89e524d95875b387:0xdfbd20718657ae8c!8m2!3d41.3802293!4d-70.6752851!16s%2Fg%2F11cpf9b5ws?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
+      address: "1067 State Rd, Vineyard Haven, MA",
+      dates: [
+        { date: "Thurs, July 10th", time: "5:00 PM" },
+        { date: "Thurs, July 10th", time: "8:00 PM" }
+
+      ],
+    }]
   }];
 
 
@@ -108,17 +107,22 @@ const Screening = ({ screening }: { screening: IScreening }) => {
 export default function Screenings() {
   return (
 
-    <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12" >
+    <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0" >
       {/* <SectionHeader>Screenings</SectionHeader> */}
 
-      <div className="md:grid md:grid-cols-2 gap-8">
-        <div >
+      <SectionSubHeader>Past Screenings</SectionSubHeader>
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <div >
           <SectionSubHeader>Upcoming Screenings</SectionSubHeader>
           {upcomingFestivals.map((festival, i) => <Festival festival={festival} key={i} />)}
+        </div> */}
+        <div >
+          <Festival festival={pastFestivals[0]} />
         </div>
         <div >
-          <SectionSubHeader>Past Screenings</SectionSubHeader>
-          {pastFestivals.map((festival, i) => <Festival festival={festival} key={i} />)}
+          <Festival festival={pastFestivals[1]} />
+          <Festival festival={pastFestivals[2]} />
+
         </div>
       </div>
 
