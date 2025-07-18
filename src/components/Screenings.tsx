@@ -20,56 +20,27 @@ type IFestival = {
   name: string;
   screenings: IScreening[]
 }
+
+type IPastFestival = {
+  name: string;
+  dates: string;
+}
 const upcomingFestivals: IFestival[] = [
 
 ]
 
-const pastFestivals: IFestival[] = [
+const pastFestivals: IPastFestival[] = [
   {
     name: 'Tribeca Festival',
-    screenings: [
-      {
-        theatre: "SVA Theatre 1 - Silas",
-        googleMapHref: "https://www.google.com/maps?q=333+W+23rd+St,+New+York,+NY+10011",
-        address: "333 W 23rd Street, NY",
-        dates: [{ date: "Thurs, June 5th 2025", time: "8:30 PM" }]
-      },
-      {
-        theatre: "Village East by Angelika",
-        googleMapHref: "https://www.google.com/maps?q=181-189+2nd+Ave,+New+York,+NY+10003",
-        address: " 181–189 2nd Ave, NY",
-        dates: [
-          { date: "Sat, June 7th 2025", time: "3:15 PM" },
-          { date: "Sun, June 8th 2025", time: "6:15 PM" },
-          { date: "Sat, June 14th 2025", time: "12:15 PM" }
-        ]
-      },
-    ]
+    dates: 'June 4th - 15th'
   },
   {
     name: 'Bentonville Film Festival',
-    screenings: [
-      {
-        theatre: "Skylight Cinema",
-        googleMapHref: "https://www.google.com/maps/place/Skylight+Cinema/@36.3684428,-94.2132482,16z/data=!3m1!4b1!4m6!3m5!1s0x87c91a98d0b54cdf:0x147c1970e86cc757!8m2!3d36.3684385!4d-94.2106679!16s%2Fg%2F11gbxb90s5?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
-        address: "350 SW A St, Bentonville, AR",
-        dates: [
-          { date: "Wed, June 18th 2025", time: "6:30 PM" },
-        ]
-      },
-    ]
-  }, {
-    name: "Martha's Vineyard Film Festival",
-    screenings: [{
-      theatre: "The Grange Hall, West Tisbury",
-      googleMapHref: "https://www.google.com/maps/place/Grange+Hall/@41.3802293,-70.6752851,17z/data=!3m1!4b1!4m6!3m5!1s0x89e524d95875b387:0xdfbd20718657ae8c!8m2!3d41.3802293!4d-70.6752851!16s%2Fg%2F11cpf9b5ws?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D",
-      address: "1067 State Rd, Vineyard Haven, MA",
-      dates: [
-        { date: "Thurs, July 10th", time: "5:00 PM" },
-        { date: "Thurs, July 10th", time: "8:00 PM" }
-
-      ],
-    }]
+    dates: 'June 16th - 22nd',
+  },
+  {
+    name: "Martha's Vineyard Film Festival Summer Series",
+    dates: 'June 20th - September 5th'
   }];
 
 
@@ -77,6 +48,13 @@ const Festival = ({ festival }: { festival: IFestival }) => (
   <div className="mb-4">
     <h4 className="text-primary">{festival.name}</h4>
     {festival.screenings.map((screening, i) => <Screening screening={screening} key={i} />)}
+  </div>
+)
+
+const PastFestival = ({ festival }: { festival: IPastFestival }) => (
+  <div className="mb-4">
+    <h4 className="">{festival.name}</h4>
+    <div>{festival.dates}</div>
   </div>
 )
 
@@ -108,24 +86,10 @@ export default function Screenings() {
   return (
 
     <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0" >
-      {/* <SectionHeader>Screenings</SectionHeader> */}
-
       <SectionSubHeader>Past Screenings</SectionSubHeader>
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* <div >
-          <SectionSubHeader>Upcoming Screenings</SectionSubHeader>
-          {upcomingFestivals.map((festival, i) => <Festival festival={festival} key={i} />)}
-        </div> */}
-        <div >
-          <Festival festival={pastFestivals[0]} />
-        </div>
-        <div >
-          <Festival festival={pastFestivals[1]} />
-          <Festival festival={pastFestivals[2]} />
-
-        </div>
+      <div >
+        {pastFestivals.map((festival, i) => <PastFestival festival={festival} key={i} />)}
       </div>
-
     </Section >
 
   );
