@@ -16,7 +16,6 @@ export default function Footer() {
   return (
     <div>
       <Divider className='my-4' />
-
       <div className='prose px-4 sm:px-8 md:px-12 py-12 leading-5 flex flex-col md:grid md:grid-cols-2 gap-12 '>
         <div >
           <h2 className='uppercase text-primary text-xl mb-2'>Press Contact</h2>
@@ -42,8 +41,13 @@ export default function Footer() {
         </div>
 
       </div>
-
       <Divider className='my-4' />
+      <div className='prose px-4 sm:px-8 md:px-12 py-12 leading-5 flex flex-col md:grid md:grid-cols-2 gap-12 '>
+
+        We are working on a distribution plan! Please check back.
+      </div>
+      <Divider className='my-4' />
+
       <footer className='prose px-4 sm:px-8 md:px-12 py-6 leading-5	'>
 
         <div className="mb-2 flex p-4 justify-center items-center gap-x-8 space-x-2 text-sm flex-wrap no-prose">
