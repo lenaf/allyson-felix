@@ -25,7 +25,7 @@ export default function Synopsis() {
         <span className="italic">She Runs the World</span> is a testament to how each of us can make a difference by being true to our own values.
 
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/obgxnKA14uk?si=My7ZYzqiS-2NcXAC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/obgxnKA14uk?si=My7ZYzqiS-2NcXAC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
     </Section>
 
