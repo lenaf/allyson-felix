@@ -27,6 +27,7 @@ export default async function IndexPage() {
     <div className="flex flex-col items-center text-gray-300">
       <Hero />
       <Quotes quotes={quotes} />
+      <Divider />
       <Screenings />
       <Divider />
       <Synopsis />
