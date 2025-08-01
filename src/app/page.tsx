@@ -3,6 +3,7 @@ import Divider from "@/components/common/Divider";
 import Credits from "@/components/Credits";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
+import { IArticle, Press } from "@/components/Press";
 import { IQuote, Quotes } from "@/components/Quotes";
 import Screenings from "@/components/Screenings";
 import Synopsis from "@/components/Synopsis";
@@ -18,11 +19,15 @@ const QUOTE_QUERY = `*[
   _type == "quote"
 ]|order(publishedAt desc)[0...12]{_id, text, publication}`;
 
+const PRESS_QUERY = `*[
+  _type == "press"
+]|order(publishedAt desc)[0...12]{_id, date, publication, image, articleLink}`;
+
 export default async function IndexPage() {
   const screenings = await client.fetch<SanityDocument[]>(SCREENING_QUERY, {}, {});
   const quotes: IQuote[] = await client.fetch<SanityDocument[]>(QUOTE_QUERY, {}, {}) as any;
+  const articles: IArticle[] = await client.fetch<SanityDocument[]>(PRESS_QUERY, {}, {}) as any;
 
-  console.log(quotes)
   return (
     <div className="flex flex-col items-center text-gray-300">
       <Hero />
@@ -33,6 +38,8 @@ export default async function IndexPage() {
       <Synopsis />
       <Divider />
       <Impact />
+      <Divider />
+      <Press articles={articles} />
       <Divider />
       <Credits />
       {/* <Divider />
