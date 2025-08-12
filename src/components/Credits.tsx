@@ -22,14 +22,14 @@ export default function Credits() {
           <Credit role='Featured Cast' credit={
             <ul>
               <li>Allyson Felix</li>
-              <li>Wes Felix<Description>Allyson’s brother & manager </Description> </li>
+              <li>Wes Felix<Description>Allyson’s brother and manager </Description> </li>
               <li>Dr. Paul and Marlean Felix<Description>Allyson’s parents </Description> </li>
               <li>Pat Connolly<Description>Olympian and coach</Description></li>
               <li>Joanna Hayes<Description>Olympian and friend</Description></li>
               <li>Jackie Joyner-Kersee<Description>Six-time Olympic medalist </Description> </li>
               <li>Coach Bob Kersee <Description>Allyson’s former coach </Description> </li>
             </ul>} />
-          <Credit role='PRODUCED & DIRECTED BY' credit={
+          <Credit role='PRODUCED AND DIRECTED BY' credit={
             <div>
               <div>{`Perri Peltz`}</div>
               <div>{`Matthew O'Neill`}</div>
@@ -50,11 +50,11 @@ export default function Credits() {
             credit={<>
               <div>Crystal McCrary Mcguire </div>
               <div>Beth Kojima</div>
-              <div>Melony & Adam Lewis</div>
-              <div>Janice Y.K. Lee & Sarah Bae</div>
+              <div>Melony and Adam Lewis</div>
+              <div>Janice Y.K. Lee and Sarah Bae</div>
               <div>Dr. Amelia Ogunlesi</div>
               <div>Carrie Walton Penner</div>
-              <div>Nina Fialkow & David Fialkow</div>
+              <div>Nina Fialkow and David Fialkow</div>
               <div>Regina K. Scully</div>
               <div>Ruth Ann Harnisch</div>
               <div>Tory Burch</div>

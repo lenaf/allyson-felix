@@ -86,7 +86,7 @@ export default function Screenings() {
   return (
 
     <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0" >
-      <SectionSubHeader>Past Screenings</SectionSubHeader>
+      <SectionHeader>Past Screenings</SectionHeader>
       <div >
         {pastFestivals.map((festival, i) => <PastFestival festival={festival} key={i} />)}
       </div>

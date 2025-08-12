@@ -36,7 +36,7 @@ export default function Impact() {
 
       <Divider className="my-6" />
 
-      <SectionSubHeader>RESOURCES & HOW YOU CAN ENGAGE</SectionSubHeader>
+      <SectionSubHeader>RESOURCES AND HOW YOU CAN ENGAGE</SectionSubHeader>
       <div className="md:grid md:grid-cols-2 gap-8">
         <div>
           <Resource
