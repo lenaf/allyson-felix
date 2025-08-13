@@ -21,7 +21,7 @@ const QUOTE_QUERY = `*[
 
 const PRESS_QUERY = `*[
   _type == "press"
-]|order(publishedAt desc)[0...12]{_id, date, publication, image, articleLink}`;
+]|order(publishedAt desc)[0...12]{_id, date, publication, image, articleLink, publicationLogo}`;
 
 export default async function IndexPage() {
   const screenings = await client.fetch<SanityDocument[]>(SCREENING_QUERY, {}, {});
@@ -32,6 +32,10 @@ export default async function IndexPage() {
     <div className="flex flex-col items-center text-gray-300">
       <Hero />
       <Quotes quotes={quotes} />
+      <video className="w-[50vw] aspect-video" controls>
+        <source src="/trailer.mp4" type="video/mp4" />
+      </video>
+
       <Divider />
       <Screenings />
       <Divider />
