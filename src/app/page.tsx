@@ -17,7 +17,7 @@ const SCREENING_QUERY = `*[
 
 const QUOTE_QUERY = `*[
   _type == "quote"
-]|order(publishedAt desc)[0...12]{_id, text, publication}`;
+]|order(order)[0...12]{_id, text, publication, author, publicationLogo}`;
 
 const PRESS_QUERY = `*[
   _type == "press"

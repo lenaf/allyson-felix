@@ -10,7 +10,6 @@ import birthFUND from "public/images/birthFUND.png"
 import RWJF from "public/images/RWJF.png"
 
 import Image from "next/image"
-import SubmitEmail from '../common/SubmitEmail'
 
 export default function Footer() {
   return (
@@ -40,10 +39,6 @@ export default function Footer() {
           </a>
         </div>
 
-      </div>
-      <Divider className='my-4' />
-      <div className='prose px-4 sm:px-8 md:px-12 py-12 leading-5 flex flex-col md:grid md:grid-cols-2 gap-12 '>
-        <SubmitEmail />
       </div>
       <Divider className='my-4' />
 

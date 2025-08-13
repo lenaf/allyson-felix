@@ -33,10 +33,6 @@ export default function SubmitEmail() {
 
     return (
         <div>
-            <div className="mb-4">
-                We are working on a distribution plan! Please check back. Leave your email if you would like to be updated.
-
-            </div>
             <form className="mb-2" onSubmit={onSubmit2}>
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_cc" value="lena.forti@disney.com,lena.forti@hulu.com" />

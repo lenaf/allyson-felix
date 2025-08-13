@@ -4,6 +4,7 @@ import Section from "@/components/common/Section";
 
 import LinkAsButton from "./common/LinkAsButton";
 import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
+import SubmitEmail from "./common/SubmitEmail";
 
 type IScreening = {
   theatre: string;
@@ -86,9 +87,18 @@ export default function Screenings() {
   return (
 
     <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0" >
-      <SectionHeader>Past Screenings</SectionHeader>
-      <div >
-        {pastFestivals.map((festival, i) => <PastFestival festival={festival} key={i} />)}
+      <SectionHeader>Past Film Festivals</SectionHeader>
+      <div className="md:grid md:grid-cols-2 gap-12">
+        <div className="mb-12 md:mb-0">
+          {pastFestivals.map((festival, i) => <PastFestival festival={festival} key={i} />)}
+        </div>
+        <div>
+          <div className="mb-4">
+            We are working on a distribution plan! Please check back. Leave your email if you would like to be updated.
+
+          </div>
+          <SubmitEmail />
+        </div>
       </div>
     </Section >
 
