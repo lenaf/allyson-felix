@@ -91,7 +91,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                 {Children.map(children, (child, index) =>
                     <div
                         key={index}
-                        className={`carousel-item flex-shrink-0 snap-start`}
+                        className={`carousel-item flex-shrink-0 snap-start pointer-events-auto`}
                         style={{
                             flexBasis: itemsToShow === 1
                                 ? '100%'
