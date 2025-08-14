@@ -85,7 +85,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                 {...rest}
                 id={id}
                 ref={carouselRef}
-                className={`carousel relative w-full snap-x snap-mandatory ${`gap-${gap}`}`}
+                className={`carousel relative w-full snap-x snap-mandatory touch-pan-x ${`gap-${gap}`}`}
             >
                 {Children.map(children, (child, index) =>
                     <div
