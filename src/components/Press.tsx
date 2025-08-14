@@ -7,7 +7,8 @@ import Image from "next/image";
 
 
 import { urlFor } from "@/data/image";
-import { PortableText } from "next-sanity";
+import { Carousel } from "./common/Carousel";
+import useBreakpoint from "use-breakpoint";
 
 
 export type IArticle = {
@@ -60,12 +61,13 @@ const Article = ({ article, className }: { article: IArticle, className?: string
 }
 
 export const Press = ({ articles }: { articles: IArticle[] }) => {
+  const { breakpoint } = useBreakpoint({ mobile: 0, tablet: 768, desktop: 1280 })
   return (
     <Section id='press' className="prose px-4 sm:px-8 md:px-12 py-12">
       <SectionHeader>Press</SectionHeader>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <Carousel id='press' itemsToShow={breakpoint === 'mobile' ? 2 : 3} gap={8}>
         {articles.map((article, i) => <Article article={article} key={i} />)}
-      </div>
+      </Carousel>
     </Section >
 
   )

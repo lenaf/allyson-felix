@@ -14,7 +14,6 @@ export type IQuote = {
 
 const Quote = ({ quote, className }: { quote: IQuote, className?: string }) => {
   const { text, publication, author, publicationLogo } = quote;
-  console.log(quote)
   return (
     <div className={`xs:w-[336px] md:w-[600px] ${className}`}>
       <div className="text-primary text-xl md:text-2xl  text-center uppercase font-black tracking-wider">{text}</div>

@@ -5,71 +5,124 @@ interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
     id: string;
     isAutoPlay?: boolean;
     showArrows?: boolean;
+    itemsToShow?: number;
+    gap?: number;
 }
 
-export function Carousel({ className = '', children, id, isAutoPlay = true, showArrows, ...rest }: CarouselProps) {
+export function Carousel({ className = '', children, id, isAutoPlay = false, showArrows = true, itemsToShow = 1, gap, ...rest }: CarouselProps) {
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const itemsLength = Children.count(children);
-    const isFirstActive = activeIndex === 0;
-    const isLastActive = activeIndex === itemsLength - 1;
     const autoPlayIntervalId = useRef<any>(null);
-    const triggerAutoPlayStart = useRef(isAutoPlay);
+    const carouselRef = useRef<HTMLDivElement>(null);
     const clearAutoPlayInterval = () => clearInterval(autoPlayIntervalId.current);
 
+    const isAtStart = activeIndex === 0;
+    const isAtEnd = activeIndex >= (itemsLength - itemsToShow);
+
     const scrollToIndex = (index: number) => {
-        const carousel = document.getElementById(id);
+        const carousel = carouselRef.current;
         if (carousel) {
-            const left = (carousel?.childNodes[index] as HTMLElement)?.offsetLeft;
-            carousel.scrollTo({ left: left, behavior: 'instant' });
-            setActiveIndex(index);
+            const items = carousel.querySelectorAll('.carousel-item');
+            if (items && items[index]) {
+                const item = items[index] as HTMLElement;
+                carousel.scrollTo({ left: item.offsetLeft, behavior: 'smooth' });
+                setActiveIndex(index);
+            }
         }
     };
 
     useEffect(() => {
-        if (triggerAutoPlayStart) {
+        if (isAutoPlay) {
             if (autoPlayIntervalId.current) clearAutoPlayInterval();
             autoPlayIntervalId.current = setInterval(() => {
-                scrollToIndex(isLastActive ? 0 : activeIndex + 1)
+                scrollToIndex(isAtEnd ? 0 : activeIndex + 1)
             }, 4000);
-            triggerAutoPlayStart.current = false;
+        } else {
+            clearAutoPlayInterval();
         }
         return clearAutoPlayInterval;
-    }, [triggerAutoPlayStart, activeIndex]);
+    }, [isAutoPlay, activeIndex, isAtEnd]);
+
+    useEffect(() => {
+        const carouselElement = carouselRef.current;
+        if (!carouselElement) return;
+
+        let scrollTimeout: NodeJS.Timeout;
+
+        const handleScroll = () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                // Scroll has ended, determine active index
+                const scrollLeft = carouselElement.scrollLeft;
+                const items = carouselElement.querySelectorAll('.carousel-item');
+                let newActiveIndex = 0;
+
+                for (let i = 0; i < items.length; i++) {
+                    const item = items[i] as HTMLElement;
+                    // If the item's left offset is less than or equal to scrollLeft, it's potentially the active one
+                    // We want the first item that is fully or mostly visible
+                    if (item.offsetLeft <= scrollLeft + 1) { // Add a small tolerance
+                        newActiveIndex = i;
+                    } else {
+                        break; // Items are ordered, so we can stop
+                    }
+                }
+                setActiveIndex(newActiveIndex);
+            }, 150); // Debounce time
+        };
+
+        carouselElement.addEventListener('scroll', handleScroll);
+
+        return () => {
+            carouselElement.removeEventListener('scroll', handleScroll);
+            clearTimeout(scrollTimeout);
+        };
+    }, [itemsLength]);
 
     return (
         <div className={`relative w-full ${className}`}>
             <div
                 {...rest}
                 id={id}
-                className="carousel relative w-full"
+                ref={carouselRef}
+                className={`carousel relative w-full snap-x snap-mandatory ${`gap-${gap}`}`}
             >
-                {Children.map(children, (child) =>
-                    <div className='carousel-item w-full'>
+                {Children.map(children, (child, index) =>
+                    <div
+                        key={index}
+                        className={`carousel-item flex-shrink-0 snap-start`}
+                        style={{
+                            flexBasis: itemsToShow === 1
+                                ? '100%'
+                                : `calc((100% - ${gap ? gap * 4 : 0}px * ${itemsToShow - 1}) / ${itemsToShow})`
+                        }}
+                    >
                         {child}
                     </div>)}
             </div>
-            <div className="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <Button
+            {showArrows && <div className="absolute -left-10 -right-10 top-1/3 flex -translate-y-1/3 transform justify-between text-2xl">
+                {<Button
+                    disabled={isAtStart}
+
                     id='scroll-back'
                     onClick={() => {
-                        scrollToIndex(isFirstActive ? itemsLength - 1 : activeIndex - 1);
-                        triggerAutoPlayStart.current = true;
+                        scrollToIndex(isAtStart ? itemsLength - 1 : activeIndex - 1);
                     }}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
+                    className={`btn-circle text-3xl bg-transparent border-none  ${isAtStart ? 'invisible' : ''}`}
                 >
                     ❮
-                </Button>
-                <Button
+                </Button>}
+                {<Button
+                    disabled={isAtEnd}
                     id='scroll-forward'
                     onClick={() => {
-                        scrollToIndex(isLastActive ? 0 : activeIndex + 1);
-                        triggerAutoPlayStart.current = true;
+                        scrollToIndex(isAtEnd ? 0 : activeIndex + 1);
                     }}
-                    className={`btn-circle btn-xs sm:btn-sm btn-base-100`}
+                    className={`btn-circle text-3xl bg-transparent border-none ${isAtEnd ? 'invisible' : ''}`}
                 >
                     ❯
-                </Button>
-            </div>
+                </Button>}
+            </div>}
         </div>
     )
 }
