@@ -32,7 +32,7 @@ export default async function IndexPage() {
     <div className="flex flex-col items-center text-gray-300">
       <Hero />
       <Quotes quotes={quotes} />
-      <video className="w-[50vw] aspect-video mb-8" controls>
+      <video className="w-[70vw] aspect-vide -mt-4 mb-16" controls preload="metadata">
         <source src="/trailer.mp4" type="video/mp4" />
       </video>
 
