@@ -24,7 +24,6 @@ const PRESS_QUERY = `*[
 ]|order(publishedAt desc)[0...12]{_id, date, publication, image, title, link, publicationLogo}`;
 
 export default async function IndexPage() {
-  const screenings = await client.fetch<SanityDocument[]>(SCREENING_QUERY, {}, {});
   const quotes: IQuote[] = await client.fetch<SanityDocument[]>(QUOTE_QUERY, {}, {}) as any;
   const articles: IArticle[] = await client.fetch<SanityDocument[]>(PRESS_QUERY, {}, {}) as any;
 

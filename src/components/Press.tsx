@@ -66,7 +66,8 @@ export const Press = ({ articles }: { articles: IArticle[] }) => {
     <Section id='press' className="prose px-4 sm:px-8 md:px-12 py-12">
       <SectionHeader>Press</SectionHeader>
       <Carousel id='press' itemsToShow={breakpoint === 'mobile' ? 2 : 3} gap={8}>
-        {articles.map((article, i) => <Article article={article} key={i} />)}
+        {articles.sort((a, b) => (new Date(a.date) as any) - (new Date(b.date) as any))
+          .map((article, i) => <Article article={article} key={i} />)}
       </Carousel>
     </Section >
 
