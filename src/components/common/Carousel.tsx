@@ -80,7 +80,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
     }, [itemsLength]);
 
     return (
-        <div className={`relative w-full ${className}`}>
+        <div className={`relative w-full px-4 ${className}`}>
             <div
                 {...rest}
                 id={id}
@@ -100,7 +100,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                         {child}
                     </div>)}
             </div>
-            {showArrows && <div className="absolute -left-10 -right-10 top-1/3 flex -translate-y-1/3 transform justify-between text-2xl">
+            {showArrows && <div className="absolute h-full -left-8 -right-8 top-1/3 flex -translate-y-1/3 transform justify-between text-2xl">
                 {<Button
                     disabled={isAtStart}
 
@@ -108,7 +108,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                     onClick={() => {
                         scrollToIndex(isAtStart ? itemsLength - 1 : activeIndex - 1);
                     }}
-                    className={`btn-circle text-3xl bg-transparent border-none  ${isAtStart ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xl h-full text-3xl m-0  ${isAtStart ? 'invisible' : ''}`}
                 >
                     ❮
                 </Button>}
@@ -118,7 +118,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                     onClick={() => {
                         scrollToIndex(isAtEnd ? 0 : activeIndex + 1);
                     }}
-                    className={`btn-circle text-3xl bg-transparent border-none ${isAtEnd ? 'invisible' : ''}`}
+                    className={`btn-circle btn-xl h-full text-3xl m-0  ${isAtEnd ? 'invisible' : ''}`}
                 >
                     ❯
                 </Button>}
