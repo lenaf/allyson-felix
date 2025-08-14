@@ -86,6 +86,7 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                 id={id}
                 ref={carouselRef}
                 className={`carousel relative w-full snap-x snap-mandatory touch-pan-x ${`gap-${gap}`}`}
+                style={{ WebkitOverflowScrolling: 'touch' }}
             >
                 {Children.map(children, (child, index) =>
                     <div
