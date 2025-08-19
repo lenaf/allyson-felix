@@ -23,7 +23,10 @@ export default function RootLayout({
     <html data-theme="custom" lang="en" style={{
       scrollBehavior: 'smooth'
     }}>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${inter.className} `}>
         <div className="flex flex-col justify-between font-sans underline-offset-4">
           <Header />
