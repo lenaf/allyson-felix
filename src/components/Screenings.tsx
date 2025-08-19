@@ -67,9 +67,9 @@ const Screenings = ({ pastFestivals, upcomingFestivals }: { pastFestivals: IPast
         </div>
         <div className="">
           <SectionSubHeader>Distribution</SectionSubHeader>
-          <div className="mb-4">
-            <div>We are working on a distribution plan! Please check back.</div>
-            <div>Leave your email if you would like to be updated.</div>
+          <div className="mb-4 w-[416px]">
+            We are working on a distribution plan! Please check back.
+            Leave your email if you would like to be updated.
           </div>
           <SubmitEmail />
         </div>
