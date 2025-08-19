@@ -12,11 +12,11 @@ import { type SanityDocument } from "next-sanity";
 
 const UPCOMING_FESTIVAL_QUERY = `*[
   _type == "upcomingFestival"
-]|order(publishedAt)[0...12]{_id, title, theatreName, theatreAddress, dates, ticketUrl, "dateText": dates[0].children[0].text}`;
+]|order(startDate )[0...12]{_id, title, theatreName, theatreAddress, dates, ticketUrl}`;
 
 const PAST_FESTIVAL_QUERY = `*[
   _type == "pastFestival"
-]|order(publishedAt)[0...12]{_id, title, dates, "dateText": dates[0].children[0].text}`;
+]|order(startDate)[0...12]{_id, title, dates}`;
 
 const QUOTE_QUERY = `*[
   _type == "quote"

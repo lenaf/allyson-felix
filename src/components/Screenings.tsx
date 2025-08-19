@@ -13,13 +13,11 @@ export type IUpcomingFestival = {
   theatreAddress?: any;
   dates?: any;
   ticketUrl?: string;
-  dateText?: string;
 }
 
 export type IPastFestival = {
   title: string;
   dates: any;
-  dateText?: string;
 }
 
 const UpcomingFestival = ({ festival }: { festival: IUpcomingFestival }) => (
@@ -48,11 +46,6 @@ const PastFestival = ({ festival }: { festival: IPastFestival }) => (
     }  </div>
 )
 
-const getDateFromDateText = (dateText?: string) => {
-  const date = (dateText ? new Date(dateText.split(' - ')[0].replace(/\d+(st|nd|rd|th)/, (match) => match.replace(/\D+/g, ''))) : new Date() as any)
-  return date
-};
-
 const Screenings = ({ pastFestivals, upcomingFestivals }: { pastFestivals: IPastFestival[]; upcomingFestivals: IUpcomingFestival[] }) => {
   return (
     <Section id='screenings' className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0" >
@@ -61,14 +54,14 @@ const Screenings = ({ pastFestivals, upcomingFestivals }: { pastFestivals: IPast
         <div className="min-w-[400px]">
           <SectionSubHeader>Upcoming Film Festivals</SectionSubHeader>
           <div className="flex flex-col gap-4">
-            {upcomingFestivals.sort((a, b) => (getDateFromDateText(b.dateText)) - (getDateFromDateText(a.dateText)))
+            {upcomingFestivals
               .map((festival, i) => <UpcomingFestival festival={festival} key={i} />)}
           </div>
         </div>
         <div className="min-w-[400px]">
           <SectionSubHeader>Past Film Festivals</SectionSubHeader>
           <div className="flex flex-col gap-4">
-            {pastFestivals.sort((a, b) => (getDateFromDateText(b.dateText)) - (getDateFromDateText(a.dateText)))
+            {pastFestivals
               .map((festival, i) => <PastFestival festival={festival} key={i} />)}
           </div>
         </div>
