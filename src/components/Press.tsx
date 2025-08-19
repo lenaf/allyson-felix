@@ -38,14 +38,14 @@ const Article = ({ article, className }: { article: IArticle, className?: string
         width="1600"
         height="900"
       />
-      <div className="line-clamp-2 leading-[1.3] mb-2">
+      <div className="line-clamp-2 min-h-[2.5em] leading-[1.3] mb-2">
         {title}
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-end justify-between">
         <div className="text-sm">{date}</div>
 
         {publicationLogo ? <Image
-          className="w-20 max-h-6 m-0 object-contain"
+          className="w-20 h-6 m-0 object-contain"
           src={urlFor(publicationLogo)
             .width(200)
             .quality(80)
@@ -54,7 +54,7 @@ const Article = ({ article, className }: { article: IArticle, className?: string
           alt={publicationLogo?.alt || ""}
           width="200"
           height="200"
-        /> : publication}
+        /> : <div className="h-6">{publication}</div>}
       </div>
     </a>
   )

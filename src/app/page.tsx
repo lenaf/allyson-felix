@@ -1,10 +1,12 @@
 
 import Divider from "@/components/common/Divider";
+import Contacts from "@/components/Contacts";
 import Credits from "@/components/Credits";
 import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
 import { IArticle, Press } from "@/components/Press";
 import { IQuote, Quotes } from "@/components/Quotes";
+import Sales from "@/components/Sales";
 import Festivals, { IPastFestival, IUpcomingFestival } from "@/components/Screenings";
 import Synopsis from "@/components/Synopsis";
 import { client } from "@/data/sanity";
@@ -55,10 +57,9 @@ export default async function IndexPage() {
       <Press articles={articles} />
       <Divider />
       <Credits />
-      {/* <Divider />
+      <Divider />
       <Contacts />
       <Divider />
-      <Sales /> */}
     </div>
   );
 }
