@@ -29,7 +29,7 @@ export default function Hero({ laurels }: { laurels: { image: any, title: string
                 .url()}
               width={200}
               height={200}
-              className={`w-16 sm:w-24 md:w-32 lg:w-36 mb-4 md:mb-8`}
+              className={`w-20 sm:w-24 md:w-32 lg:w-36 mb-4 md:mb-8`}
             />)}
         </div>
       </div>
