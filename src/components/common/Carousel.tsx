@@ -1,5 +1,6 @@
 import { Children, useEffect, useRef, useState } from "react";
 import Button from "./Button";
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 interface CarouselProps extends React.HTMLProps<HTMLDivElement> {
     id: string;
@@ -109,7 +110,8 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                     }}
                     className={`btn-circle btn-xl h-full text-3xl m-0  ${isAtStart ? 'invisible' : ''} pointer-events-auto`}
                 >
-                    ❮
+                    <ChevronLeftIcon className="size-10 mb-16" />
+
                 </Button>}
                 {<Button
                     id='scroll-forward'
@@ -118,7 +120,8 @@ export function Carousel({ className = '', children, id, isAutoPlay = false, sho
                     }}
                     className={`btn-circle btn-xl h-full text-3xl m-0  ${isAtEnd ? 'invisible' : ''} pointer-events-auto`}
                 >
-                    ❯
+                    <ChevronRightIcon className="size-10 mb-16" />
+
                 </Button>}
             </div>}
         </div>
