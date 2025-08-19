@@ -1,7 +1,7 @@
 "use client"
 
 import Section from "@/components/common/Section";
-import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
+import { SectionHeader } from "./common/SectionHeader";
 import Divider from "./common/Divider";
 
 const Role = ({ children }) => <h4 className="text-primary uppercase">{children}</h4>
@@ -72,7 +72,7 @@ export default function Credits() {
 
       <Divider className="my-6" />
 
-      <SectionSubHeader>About the Filmakers</SectionSubHeader>
+      <SectionHeader>About the Filmakers</SectionHeader>
       <div className="mb-2">
         <h4 className="uppercase text-primary">Perri Peltz</h4>
         <div className="uppercase text-gray-100">Director/Producer</div>
@@ -119,7 +119,7 @@ export default function Credits() {
 
       <Divider className="my-6" />
 
-      <SectionSubHeader>About DCTV</SectionSubHeader>
+      <SectionHeader>About DCTV</SectionHeader>
       <div>
         <p className="">Founded in 1972, Downtown Community Television Center, Inc. (DCTV) has grown into one of the leading documentary production and film education centers in the country. A community of and for documentary filmmakers, DCTV is a unique space where community screenings, master classes, youth education programs and affordable production resources all exist side by side with award-winning documentary work.
           DCTV’s film and television productions have been recognized with two Academy Award Nominations, 18 National Emmy Awards, four duPont-Columbia Awards, a Peabody Award, 6 New York Emmy Awards and accolades at film festivals and competitions around the world.
@@ -130,7 +130,7 @@ export default function Credits() {
 
       <Divider className="my-6" />
 
-      <SectionSubHeader>About Get to Yes</SectionSubHeader>
+      <SectionHeader>About Get to Yes</SectionHeader>
       <div>
         <p className="">Get to Yes Productions is a full service production company that brings together innovators in sports, fashion, pop culture, politics and the arts. Get to Yes captures the pulse and breadth of humanity by producing thought-provoking and impactful scripted and non-scripted content.
         </p>

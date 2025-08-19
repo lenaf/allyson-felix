@@ -3,7 +3,7 @@
 import Section from "@/components/common/Section";
 
 import LinkAsButton from "./common/LinkAsButton";
-import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
+import { SectionHeader } from "./common/SectionHeader";
 import SubmitEmail from "./common/SubmitEmail";
 
 type IScreening = {
