@@ -61,7 +61,7 @@ const Article = ({ article, className }: { article: IArticle, className?: string
 }
 
 export const Press = ({ articles }: { articles: IArticle[] }) => {
-  const { breakpoint } = useBreakpoint({ mobile: 0, tablet: 400, desktop: 768 })
+  const { breakpoint } = useBreakpoint({ mobile: 0, tablet: 600, desktop: 768 })
   return (
     <Section id='press' className="prose px-4 sm:px-8 md:px-12 py-12">
       <SectionHeader>Press</SectionHeader>
