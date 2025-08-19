@@ -26,16 +26,20 @@ const PRESS_QUERY = `*[
   _type == "press"
 ]|order(publishedAt desc)[0...12]{_id, date, publication, image, title, link, publicationLogo}`;
 
+const LAUREL_QUERY = `*[
+  _type == "laurel"
+]|order(date)[0...12]{image, title}`;
+
 export default async function IndexPage() {
   const quotes: IQuote[] = await client.fetch<SanityDocument[]>(QUOTE_QUERY, {}, {}) as any;
   const articles: IArticle[] = await client.fetch<SanityDocument[]>(PRESS_QUERY, {}, {}) as any;
   const pastFestivals: IPastFestival[] = await client.fetch<SanityDocument[]>(PAST_FESTIVAL_QUERY, {}, {}) as any;
   const upcomingFestivals: IUpcomingFestival[] = await client.fetch<SanityDocument[]>(UPCOMING_FESTIVAL_QUERY, {}, {}) as any;
-  console.log(pastFestivals, upcomingFestivals)
+  const laurels: any[] = await client.fetch<SanityDocument[]>(LAUREL_QUERY, {}, {}) as any;
 
   return (
     <div className="flex flex-col items-center text-gray-300">
-      <Hero />
+      <Hero laurels={laurels} />
       <Quotes quotes={quotes} />
       <video className="w-[60vw] aspect-video -mt-4 mb-16" controls preload="metadata" poster="/trailer-image.png">
         <source src="/trailer.mp4" type="video/mp4" />
