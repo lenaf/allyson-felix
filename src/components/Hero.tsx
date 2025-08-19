@@ -20,6 +20,7 @@ export default function Hero({ laurels }: { laurels: { image: any, title: string
         <div className={`absolute relative`}>
           {laurels.map((l, i) =>
             <Image
+              key={i}
               alt={l.title}
               src={urlFor(l.image)
                 .width(200)
