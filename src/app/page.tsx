@@ -5,15 +5,18 @@ import Hero from "@/components/Hero";
 import Impact from "@/components/Impact";
 import { IArticle, Press } from "@/components/Press";
 import { IQuote, Quotes } from "@/components/Quotes";
-import Screenings from "@/components/Screenings";
+import Festivals, { IPastFestival, IUpcomingFestival } from "@/components/Screenings";
 import Synopsis from "@/components/Synopsis";
 import { client } from "@/data/sanity";
 import { type SanityDocument } from "next-sanity";
 
-const SCREENING_QUERY = `*[
-  _type == "screening"
-  && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+const UPCOMING_FESTIVAL_QUERY = `*[
+  _type == "upcomingFestival"
+]|order(publishedAt)[0...12]{_id, title, theatreName, theatreAddress, dates, ticketUrl, publishedAt}`;
+
+const PAST_FESTIVAL_QUERY = `*[
+  _type == "pastFestival"
+]|order(publishedAt)[0...12]{_id, title, dates, publishedAt}`;
 
 const QUOTE_QUERY = `*[
   _type == "quote"
@@ -26,6 +29,9 @@ const PRESS_QUERY = `*[
 export default async function IndexPage() {
   const quotes: IQuote[] = await client.fetch<SanityDocument[]>(QUOTE_QUERY, {}, {}) as any;
   const articles: IArticle[] = await client.fetch<SanityDocument[]>(PRESS_QUERY, {}, {}) as any;
+  const pastFestivals: IPastFestival[] = await client.fetch<SanityDocument[]>(PAST_FESTIVAL_QUERY, {}, {}) as any;
+  const upcomingFestivals: IUpcomingFestival[] = await client.fetch<SanityDocument[]>(UPCOMING_FESTIVAL_QUERY, {}, {}) as any;
+  console.log(pastFestivals, upcomingFestivals)
 
   return (
     <div className="flex flex-col items-center text-gray-300">
@@ -36,7 +42,7 @@ export default async function IndexPage() {
       </video>
 
       <Divider />
-      <Screenings />
+      <Festivals pastFestivals={pastFestivals} upcomingFestivals={upcomingFestivals} />
       <Divider />
       <Synopsis />
       <Divider />
