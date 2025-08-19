@@ -42,7 +42,7 @@ const Article = ({ article, className }: { article: IArticle, className?: string
         {title}
       </div>
       <div className="flex items-end justify-between">
-        <div className="text-sm">{date}</div>
+        <div className="text-sm line-clamp-1">{date}</div>
 
         {publicationLogo ? <Image
           className="w-20 h-6 m-0 object-contain"
@@ -54,7 +54,7 @@ const Article = ({ article, className }: { article: IArticle, className?: string
           alt={publicationLogo?.alt || ""}
           width="200"
           height="200"
-        /> : <div className="h-6">{publication}</div>}
+        /> : <div className="h-6 line-clamp-1">{publication}</div>}
       </div>
     </a>
   )
