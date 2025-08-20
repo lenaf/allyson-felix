@@ -33,6 +33,8 @@ const LAUREL_QUERY = `*[
   _type == "laurel"
 ]|order(date)[0...12]{image, title}`;
 
+export const revalidate = 0;
+
 export default async function IndexPage({
   searchParams
 }: {
