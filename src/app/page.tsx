@@ -1,4 +1,5 @@
 
+
 import Divider from "@/components/common/Divider";
 import Contacts from "@/components/Contacts";
 import Credits from "@/components/Credits";
@@ -7,11 +8,9 @@ import Impact from "@/components/Impact";
 import PreviewBanner from "@/components/PreviewBanner";
 import { IArticle, Press } from "@/components/Press";
 import { IQuote, Quotes } from "@/components/Quotes";
-import Sales from "@/components/Sales";
 import Festivals, { IPastFestival, IUpcomingFestival } from "@/components/Screenings";
 import Synopsis from "@/components/Synopsis";
 import { getClient } from "@/data/sanity";
-import { getPreviewFromSearchParams } from "@/lib/preview";
 import { type SanityDocument } from "next-sanity";
 
 const UPCOMING_FESTIVAL_QUERY = `*[
@@ -34,14 +33,14 @@ const LAUREL_QUERY = `*[
   _type == "laurel"
 ]|order(date)[0...12]{image, title}`;
 
-export default async function IndexPage({ 
-  searchParams 
-}: { 
-  searchParams: { [key: string]: string | string[] | undefined } 
+export default async function IndexPage({
+  searchParams
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const isPreview = getPreviewFromSearchParams(searchParams);
+  const isPreview = searchParams.preview === 'true';
   const client = getClient(isPreview);
-  
+
   const quotes: IQuote[] = await client.fetch<SanityDocument[]>(QUOTE_QUERY, {}, {}) as any;
   const articles: IArticle[] = await client.fetch<SanityDocument[]>(PRESS_QUERY, {}, {}) as any;
   const pastFestivals: IPastFestival[] = await client.fetch<SanityDocument[]>(PAST_FESTIVAL_QUERY, {}, {}) as any;
