@@ -7,7 +7,7 @@ import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
 export default function Contacts() {
   return (
 
-    <Section id='contacts' className="prose px-4 sm:px-8 md:px-12 py-12" >
+    <Section id='contact' className="prose px-4 sm:px-8 md:px-12 py-12" >
       <SectionHeader>Contact</SectionHeader>
       <div className='flex flex-col md:grid md:grid-cols-2 gap-12 '>
         <div >

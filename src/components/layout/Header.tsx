@@ -39,7 +39,7 @@ const Header = () => {
         </Link>
 
         <div className="desktop">
-          <NavLinks linkClass='text-lg' className="flex items-center gap-4 md:gap-8" />
+          <NavLinks linkClass='text-lg' className="flex items-center gap-4 md:gap-8 ml-8" />
         </div>
         <MobileNav />
       </div>

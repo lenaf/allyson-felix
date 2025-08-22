@@ -10,6 +10,7 @@ const siteData = {
     { href: '#impact', title: 'Impact', id: 'impact' },
     { href: '#press', title: 'Press', id: 'press' },
     { href: '#credits', title: 'Credits', id: 'credits' },
+    { href: '#contact', title: 'Contact', id: 'contact' },
   ],
 }
 

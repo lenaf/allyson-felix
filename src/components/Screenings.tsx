@@ -40,7 +40,7 @@ const UpcomingFestival = ({ festival }: { festival: IUpcomingFestival }) => (
 
 const PastFestival = ({ festival }: { festival: IPastFestival }) => (
   <div>
-    <h4 >{festival.title}</h4>
+    <h4 className="text-primary">{festival.title}</h4>
     {festival?.dates &&
       <div className="prose"> <PortableText value={festival?.dates} /></div>
     }  </div>
