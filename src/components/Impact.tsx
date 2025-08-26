@@ -71,8 +71,7 @@ export default function Impact() {
             description={
               <div>
                 <p className="my-1">
-                  RWJF is a leading national philanthropy dedicated to taking bold leaps to transform health in our lifetime by working to dismantle structural racism and other barriers to health. Through funding, convening, advocacy, and evidence-building, RWJF works side-by-side with communities, practitioners, and institutions to get to health equity faster and pave the way together to a future where health is no longer a privilege, but a right.`
-                </p>
+                  RWJF is a leading national philanthropy dedicated to taking bold leaps to transform health in our lifetime by working to dismantle structural racism and other barriers to health. Through funding, convening, advocacy, and evidence-building, RWJF works side-by-side with communities, practitioners, and institutions to get to health equity faster and pave the way together to a future where health is no longer a privilege, but a right.                </p>
                 <div>
                   <a
                     target="_blank"
