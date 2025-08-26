@@ -75,7 +75,7 @@ export default function Credits() {
       <SectionHeader>About the Filmakers</SectionHeader>
       <div className="mb-2">
         <h4 className="uppercase text-primary">Perri Peltz</h4>
-        <div className="uppercase text-gray-100">Director/Producer</div>
+        <div className="uppercase text-gray-100">DIRECTOR / PRODUCER</div>
         <p className="mt-2">{`Perri Peltz is an Emmy® award winning documentary filmmaker, journalist, and public health advocate. Most recently, Perri directed The Last Twins, in select theaters, Can’t Look Away for Bloomberg Originals and Surveilled with Ronan Farrow for HBO with Matthew O’Neill. Perri and Matt also created the Emmy® winning documentary news series AXIOS on HBO, and directed and produced the 2019 HBO Documentary, Alternate Endings: Six New Ways to Die in America. Previously, Perri directed the HBO documentaries, Warning: This Drug May Kill You, about the opioid addiction epidemic and Risky Drinking, about alcohol use disorder. She co-directed A Conversation About Growing Up Black as part of the “Conversation on Race” series for The New York Times Op-Docs, and other films include HBO’s Remembering the Artist: Robert De Niro, Sr. and Prison Dogs. Perri hosts “The Perri Peltz Show” on SiriusXM Radio and has a Doctorate in Public Health from Columbia University. She was previously an award-winning broadcast journalist for NBC, ABC, and CNN.`}</p>
       </div>
 
