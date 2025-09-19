@@ -37,7 +37,6 @@ const Article = ({ article, className }: { article: IArticle, className?: string
         alt={image?.alt || ""}
         width="1600"
         height="900"
-        placeholder="blur"
       />
       <div className="line-clamp-2 min-h-[2.5em] leading-[1.3] mb-2">
         {title}
@@ -55,7 +54,6 @@ const Article = ({ article, className }: { article: IArticle, className?: string
           alt={publicationLogo?.alt || ""}
           width="200"
           height="200"
-          placeholder="blur"
         /> : <div className="h-6 line-clamp-1">{publication}</div>}
       </div>
     </a>

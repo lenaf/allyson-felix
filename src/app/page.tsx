@@ -54,9 +54,9 @@ export default async function IndexPage({
       {isPreview && <PreviewBanner />}
       <Hero laurels={laurels} />
       <Quotes quotes={quotes} />
-      <video className="w-[60vw] aspect-video -mt-4 mb-16" controls preload="metadata" poster="/trailer-image.png">
+      {/* <video className="w-[60vw] aspect-video -mt-4 mb-16" controls preload="metadata" poster="/trailer-image.png">
         <source src="/trailer.mp4" type="video/mp4" />
-      </video>
+      </video> */}
 
       <Divider />
       <Festivals pastFestivals={pastFestivals} upcomingFestivals={upcomingFestivals} />

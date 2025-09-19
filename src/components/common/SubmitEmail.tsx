@@ -13,7 +13,7 @@ export default function SubmitEmail() {
         const formData = new FormData(event.target);
 
         try {
-            const response = await fetch("https://formsubmit.co/lforti41@gmail.com", {
+            const response = await fetch("https://formsubmit.co/bmarkham@dctvny.org", {
                 method: "POST",
                 body: formData
             });
