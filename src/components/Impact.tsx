@@ -51,13 +51,13 @@ export default function Impact() {
         <b className="uppercase font-black italic text-gray-100 mr-1">
           She Runs the World{" "}
         </b>
-        is more than a film—Allyson's story is a call to action, accountability,
-        and positive change in maternal health.
+        {`is more than a film—Allyson's story is a call to action, accountability,
+        and positive change in maternal health.`}
       </p>
       <p className="my-2">
         {" "}
         Allyson Felix used her voice.{" "}
-        <b className="font-black text-gray-100">Now it's our turn.</b>
+        <b className="font-black text-gray-100">{`Now it's our turn.`}</b>
       </p>
       <p className="my-2 text-primary font-black">
         Watch the film. Share the message. Join the movement.
@@ -109,12 +109,12 @@ export default function Impact() {
       </div>
       <div>
         <p className="my-2">
-          In conjunction with Allyson's story, the creative team behind She Runs
+          {`In conjunction with Allyson's story, the creative team behind She Runs
           The World hosted an important hour-long conversation on power,
-          parenthood, and finding solutions to the maternal health crisis.
+          parenthood, and finding solutions to the maternal health crisis.`}
         </p>
         <p className="my-2">
-          Stream now to hear Director and SiriusXM host Perri Peltz DrPH, in
+          {`Stream now to hear Director and SiriusXM host Perri Peltz DrPH, in
           conversation with 11-time Olympic Medalist, Entrepreneur and Maternal
           Health Advocate Allyson Felix, Award-winning journalist, NYT
           bestselling author, Television Host, and birthFUND Founder Elaine
@@ -125,7 +125,7 @@ export default function Impact() {
           America, the urgency of telling Allyson's story, and the role of
           midwifery and universal healthcare in future solutions. Listen to
           learn how you can engage in the future of maternal healthcare in the
-          United States.{" "}
+          United States.`}
         </p>
       </div>
     </Section>
