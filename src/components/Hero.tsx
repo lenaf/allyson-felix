@@ -12,7 +12,7 @@ export default function Hero({
 }: {
   laurels: { image: any; title: string }[];
 }) {
-  const use2ColsOnEachSideForDesktop = laurels.length > 10;
+  const use2ColsOnEachSideForDesktop = laurels.length > 8;
   const firstHalfLaurels = laurels.slice(0, Math.ceil(laurels.length / 2));
   const secondHalfLaurels = laurels.slice(Math.ceil(laurels.length / 2));
 
