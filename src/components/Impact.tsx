@@ -104,7 +104,7 @@ export default function Impact() {
           target="_blank"
           href="https://www.siriusxm.com/player/episode-audio/entity/8fe9fcf7-378b-95b0-ecbe-72151fbbc6fd?utm_medium=shared"
         >
-          Listen on SiriusXM{" "}
+          Listen on SiriusXM
         </a>
       </div>
       <div>
