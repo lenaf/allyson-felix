@@ -47,16 +47,14 @@ export default function Impact() {
       <Divider className="my-6" />
       <SectionSubHeader>The Call to Action</SectionSubHeader>
       <p className="my-2">
-        {" "}
         <b className="uppercase font-black italic text-gray-100 mr-1">
-          She Runs the World{" "}
+          She Runs the World
         </b>
         {`is more than a film—Allyson's story is a call to action, accountability,
         and positive change in maternal health.`}
       </p>
       <p className="my-2">
-        {" "}
-        Allyson Felix used her voice.{" "}
+        Allyson Felix used her voice.
         <b className="font-black text-gray-100">{`Now it's our turn.`}</b>
       </p>
       <p className="my-2 text-primary font-black">

@@ -29,7 +29,6 @@ const UpcomingFestival = ({ festival }: { festival: IUpcomingFestival }) => (
       )}
       {festival?.theatreAddress && (
         <div className="text-white prose">
-          {" "}
           <PortableText value={festival?.theatreAddress} />
         </div>
       )}
