@@ -6,7 +6,7 @@ import Section from "./common/Section";
 export default function Teaser() {
   return (
     <Section id="teaser" className="prose px-4 sm:px-8 md:px-12 py-12">
-      <SectionHeader>Teaser</SectionHeader>
+      <SectionHeader>SNEAK PEAK</SectionHeader>
       <video
         className="w-[60vw] aspect-video mx-auto"
         controls
