@@ -4,6 +4,7 @@ import Section from "@/components/common/Section";
 import { SectionHeader, SectionSubHeader } from "./common/SectionHeader";
 import Divider from "./common/Divider";
 import siteData from "@/data/siteData";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Resource = ({ title, description, link, additionalLinks }) => (
   <div className="mb-5">
@@ -11,6 +12,13 @@ const Resource = ({ title, description, link, additionalLinks }) => (
       target="_blank"
       href={link}
       className="text-primary font-black text-lg underline-offset-4"
+      onClick={() =>
+        sendGAEvent("event", "click", {
+          event_category: "outbound",
+          event_label: link,
+          transport_type: "beacon",
+        })
+      }
     >
       {title}
     </a>
@@ -18,7 +26,17 @@ const Resource = ({ title, description, link, additionalLinks }) => (
       <p className="my-1">{description}</p>
       {additionalLinks.map((linkItem, index) => (
         <div key={index}>
-          <a target="_blank" href={linkItem.url}>
+          <a
+            target="_blank"
+            href={linkItem.url}
+            onClick={() =>
+              sendGAEvent("event", "click", {
+                event_category: "outbound",
+                event_label: linkItem.url,
+                transport_type: "beacon",
+              })
+            }
+          >
             {linkItem.label}
           </a>
         </div>
