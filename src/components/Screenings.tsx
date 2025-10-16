@@ -75,9 +75,14 @@ const Screenings = ({
       className="prose px-4 sm:px-8 md:px-12 py-12 flex-grow-0"
     >
       <SectionHeader>Festivals</SectionHeader>
-      <div className="flex flex-wrap lg:grid lg:grid-cols-3  gap-x-16 gap-y-8">
-        <div className="min-w-[300px] max-w-[400px] flex-wrap">
-          <SectionSubHeader>Upcoming Film Festivals</SectionSubHeader>
+      <div className="flex flex-wrap xl:grid xl:grid-cols-3 xl:gap-0 gap-x-20 gap-y-8">
+        <div className="min-w-[380px] max-w-[400px] flex-wrap">
+          <SectionSubHeader
+            className="whitespace-nowrap
+"
+          >
+            Upcoming Film Festivals
+          </SectionSubHeader>
           <div className="flex flex-col gap-4">
             {upcomingFestivals.map((festival, i) => (
               <UpcomingFestival festival={festival} key={i} />
@@ -85,7 +90,9 @@ const Screenings = ({
           </div>
         </div>
         <div className="min-w-[300px] max-w-[400px] flex-wrap">
-          <SectionSubHeader>Past Film Festivals</SectionSubHeader>
+          <SectionSubHeader className="whitespace-nowrap">
+            Past Film Festivals
+          </SectionSubHeader>
           <div className="flex flex-col gap-4">
             {pastFestivals.map((festival, i) => (
               <PastFestival festival={festival} key={i} />
