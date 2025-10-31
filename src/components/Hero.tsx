@@ -43,7 +43,7 @@ export default function Hero({
                     .url()}
                   width={200}
                   height={200}
-                  className={`w-16 h-auto sm:w-24 md:w-32 lg:w-36`}
+                  className={`w-12 h-auto sm:w-24 md:w-32 lg:w-36`}
                 />
               ))}
             </div>

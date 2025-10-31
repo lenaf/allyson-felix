@@ -59,7 +59,7 @@ export const Quotes = ({
       id="quotes"
       className="px-4 sm:px-12 md:px-20 lg:px-32 xl:px-28 py-12"
     >
-      <div className="flex gap-2 justify-between mb-16">
+      <div className="flex gap-2 justify-between mb-8 md:mb-16">
         {laurels
           .filter((l) => l.featured)
           .map((l, i) => (
