@@ -47,19 +47,32 @@ const Quote = ({ quote, className }: { quote: IQuote; className?: string }) => {
   );
 };
 
-export const Quotes = ({ quotes }: { quotes: IQuote[] }) => {
+export const Quotes = ({
+  quotes,
+  laurels,
+}: {
+  quotes: IQuote[];
+  laurels: { image: any; title: string; featured: boolean }[];
+}) => {
   return (
     <Section
       id="quotes"
-      className="px-4 sm:px-12 md:px-20 lg:px-32 xl:px-28 py-12 flex gap-12 flex-wrap md:flex-nowrap"
+      className="px-4 sm:px-12 md:px-20 lg:px-32 xl:px-28 py-12"
     >
-      <Image
-        src={Laurel}
-        alt={"Aspen Laurel"}
-        width={300}
-        height={300}
-        className={"w-[200px] lg:w-[300px] object-contain mx-auto"}
-      />
+      <div className="flex gap-2 justify-between mb-16">
+        {laurels
+          .filter((l) => l.featured)
+          .map((l, i) => (
+            <Image
+              key={i}
+              alt={l.title}
+              src={urlFor(l.image).width(200).quality(80).auto("format").url()}
+              width={300}
+              height={300}
+              className={"w-[200px] lg:w-[300px] object-contain"}
+            />
+          ))}
+      </div>
       <div className="flex flex-col">
         {quotes.map((quote, i) => (
           <Quote

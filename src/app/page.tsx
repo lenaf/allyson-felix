@@ -13,7 +13,6 @@ import Festivals, {
 import Synopsis from "@/components/Synopsis";
 import { getClient } from "@/data/sanity";
 import { type SanityDocument } from "next-sanity";
-import { SectionHeader } from "@/components/common/SectionHeader";
 import Teaser from "@/components/Teaser";
 
 const UPCOMING_FESTIVAL_QUERY = `*[
@@ -30,11 +29,11 @@ const QUOTE_QUERY = `*[
 
 const PRESS_QUERY = `*[
   _type == "press"
-]|order(publishedAt desc)[0...12]{_id, date, publication, image, title, link, publicationLogo}`;
+]|order(publishedAt desc)[0...20]{_id, date, publication, image, title, link, publicationLogo}`;
 
 const LAUREL_QUERY = `*[
   _type == "laurel"
-]|order(date)[0...12]{image, title}`;
+]|order(date)[0...20]{image, title, featured}`;
 
 export const revalidate = 0;
 
@@ -74,7 +73,7 @@ export default async function IndexPage({
     <div className="flex flex-col items-center text-gray-300">
       {isPreview && <PreviewBanner />}
       <Hero laurels={laurels} />
-      <Quotes quotes={quotes} />
+      <Quotes quotes={quotes} laurels={laurels} />
       <Divider />
       <Teaser />
       <Divider />
