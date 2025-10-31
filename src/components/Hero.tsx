@@ -19,18 +19,18 @@ export default function Hero({
   return (
     <Section
       id="home"
-      className="flex h-[80vw] md:h-[60vw] lg:h-[50vw] xl:h-[40vw] flex-col justify-top items-left gap-4"
+      className="flex h-[80vw] md:h-[60vw] lg:h-[50vw] xl:h-[40vw] flex-col justify-top items-left gap-4 overflow-hidden"
     >
       <BackgroundImage
         alt={"Allyson Felix wearing her olympic medals"}
         src={background}
       />
-      <div className="p-4 md:p-8 relative">
-        <div className="flex justify-between">
+      <div className="p-4 md:p-8 relative h-full">
+        <div className="flex justify-between h-full">
           {[firstHalfLaurels, secondHalfLaurels].map((laurelsSet, i) => (
             <div
               key={i}
-              className={`grid grid-cols-1 gap-1 sm:gap-2 md:gap-4 lg:gap-6 items-center ${use2ColsOnEachSideForDesktop ? "md:grid-cols-2" : ""} `}
+              className={`grid grid-cols-1 gap-[2%] items-center h-full ${use2ColsOnEachSideForDesktop ? "md:grid-cols-2" : ""} `}
             >
               {laurelsSet.map((l, j) => (
                 <Image
@@ -43,7 +43,7 @@ export default function Hero({
                     .url()}
                   width={200}
                   height={200}
-                  className={`w-12 h-auto sm:w-24 md:w-32 lg:w-36`}
+                  className="w-[10vw] h-auto sm:w-24 md:w-32 lg:w-36"
                 />
               ))}
             </div>
