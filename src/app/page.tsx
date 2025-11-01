@@ -33,7 +33,7 @@ const PRESS_QUERY = `*[
 
 const LAUREL_QUERY = `*[
   _type == "laurel"
-]|order(date)[0...20]{image, title, featured}`;
+]|order(date)[0...20]{image, title, isAward}`;
 
 export const revalidate = 0;
 
@@ -72,8 +72,8 @@ export default async function IndexPage({
   return (
     <div className="flex flex-col items-center text-gray-300">
       {isPreview && <PreviewBanner />}
-      <Hero laurels={laurels} />
-      <Quotes quotes={quotes} laurels={laurels} />
+      <Hero laurels={laurels.filter((l) => !l.isAward)} />
+      <Quotes quotes={quotes} laurels={laurels.filter((l) => l.isAward)} />
       <Divider />
       <Teaser />
       <Divider />
