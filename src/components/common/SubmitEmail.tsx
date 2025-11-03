@@ -38,11 +38,7 @@ export default function SubmitEmail() {
     <div>
       <form className="mb-2" onSubmit={onSubmit2}>
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_cc"
-          value="lena.forti@disney.com,lena.forti@hulu.com"
-        />
+        <input type="hidden" name="_cc" value="lforti41@gmail.com" />
         <div className="flex items-end">
           <Input
             label="Email Address"
