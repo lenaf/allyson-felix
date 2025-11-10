@@ -64,10 +64,10 @@ export const Quotes = ({
           <Image
             key={i}
             alt={l.title}
-            src={urlFor(l.image).width(200).quality(80).auto("format").url()}
+            src={urlFor(l.image).width(800).quality(100).auto("format").url()}
             width={300}
             height={300}
-            className={"w-[200px] lg:w-[300px] object-contain"}
+            className={"w-[180px] lg:w-[200px] object-contain"}
           />
         ))}
       </div>
