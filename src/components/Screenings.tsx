@@ -103,7 +103,14 @@ const Screenings = ({
           <SectionSubHeader>Distribution</SectionSubHeader>
           <div className="mb-4">
             We are working on a distribution plan! Please check back. Leave your
-            email if you would like to be updated.
+            email if you would like to be updated, or contact us at{" "}
+            <a 
+              href="mailto:info@sherunstheworldfilm.com" 
+              className="text-primary underline"
+            >
+              info@sherunstheworldfilm.com
+            </a>
+            .
           </div>
           <SubmitEmail />
         </div>

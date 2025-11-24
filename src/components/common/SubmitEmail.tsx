@@ -14,7 +14,7 @@ export default function SubmitEmail() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/bmarkham@dctvny.org",
+        "https://formsubmit.co/info@sherunstheworldfilm.com",
         {
           method: "POST",
           body: formData,
@@ -38,7 +38,11 @@ export default function SubmitEmail() {
     <div>
       <form className="mb-2" onSubmit={onSubmit2}>
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_cc" value="lforti41@gmail.com" />
+        <input
+          type="hidden"
+          name="_cc"
+          value="julia@merripatproductions.com "
+        />
         <div className="flex items-end">
           <Input
             label="Email Address"
