@@ -17,23 +17,23 @@ import Teaser from "@/components/Teaser";
 
 const UPCOMING_FESTIVAL_QUERY = `*[
   _type == "upcomingFestival"
-]|order(startDate )[0...12]{_id, title, theatreName, theatreAddress, dates, ticketUrl}`;
+]|order(startDate ){_id, title, theatreName, theatreAddress, dates, ticketUrl}`;
 
 const PAST_FESTIVAL_QUERY = `*[
   _type == "pastFestival"
-]|order(startDate)[0...12]{_id, title, dates}`;
+]|order(startDate){_id, title, dates}`;
 
 const QUOTE_QUERY = `*[
   _type == "quote"
-]|order(order)[0...12]{_id, text, publication, author, publicationLogo}`;
+]|order(order){_id, text, publication, author, publicationLogo}`;
 
 const PRESS_QUERY = `*[
   _type == "press"
-]|order(publishedAt desc)[0...20]{_id, date, publication, image, title, link, publicationLogo}`;
+]|order(publishedAt desc){_id, date, publication, image, title, link, publicationLogo}`;
 
 const LAUREL_QUERY = `*[
   _type == "laurel"
-]|order(date)[0...20]{image, title, isAward}`;
+]|order(date){image, title, isAward}`;
 
 export const revalidate = 0;
 
