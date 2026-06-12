@@ -18,13 +18,6 @@ export default function Contacts() {
           </a>
         </div>
 
-        <div>
-          <SectionSubHeader>Worldwide Sales Contact</SectionSubHeader>
-          <div className="text-gray-100 text-lg mb-2">The Film Sales Company</div>
-          <a href="mailto:sales@filmsalescorp.com" className=" underline hover:text-primary transition block">
-            sales@filmsalescorp.com
-          </a>
-        </div>
 
       </div>
 
