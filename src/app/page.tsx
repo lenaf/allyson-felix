@@ -77,6 +77,8 @@ export default async function IndexPage({
       <Divider />
       <Teaser />
       <Divider />
+      <Press articles={articles} />
+      <Divider />
       <Festivals
         pastFestivals={pastFestivals}
         upcomingFestivals={upcomingFestivals}
@@ -85,8 +87,6 @@ export default async function IndexPage({
       <Synopsis />
       <Divider />
       <Impact />
-      <Divider />
-      <Press articles={articles} />
       <Divider />
       <Credits />
       <Divider />
